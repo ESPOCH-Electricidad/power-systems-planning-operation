@@ -1,7 +1,11 @@
 # TNEP transporte
 
-Esta carpeta agrupa datos, actividades y notebooks relacionados con **TNEP transporte**.
+Datos y actividades para analizar expansión de red mediante balance nodal y límites de capacidad.
 
-Para la formulación matemática, revisar la carpeta `modelos/` del bloque correspondiente.
+## Uso didáctico
 
-> Nota: los archivos `.mod` y `.run` no se publican en este repositorio público si forman parte del material reservado del docente.
+1. Revisar los datos del caso.
+2. Identificar parámetros, unidades y supuestos.
+3. Formular el problema matemático asociado.
+4. Ejecutar la herramienta computacional indicada en clase.
+5. Interpretar resultados y comparar escenarios.

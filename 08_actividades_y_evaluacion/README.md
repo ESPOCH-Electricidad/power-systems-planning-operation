@@ -1,10 +1,15 @@
-# Actividades y evaluación
+# 08 · Actividades y evaluación
 
-Actividades diagnósticas, formativas y sumativas para evaluar interpretación técnica.
+Esta sección organiza actividades diagnósticas, formativas y sumativas para reforzar el aprendizaje de modelos de optimización aplicados a sistemas eléctricos.
 
-## Estructura sugerida
+## Tipos de actividades
 
-- `modelos/`: formulaciones matemáticas.
-- `datos/`: casos o datos propios del bloque.
-- `notebooks/`: exploración y visualización.
-- `actividades/`: consignas y rúbricas.
+- Diagnóstico de conocimientos previos.
+- Interpretación colaborativa de casos.
+- Análisis de sensibilidad.
+- Cuestionarios técnicos.
+- Rúbricas de evaluación.
+
+## Criterios generales
+
+Las actividades valoran formulación, ejecución, interpretación técnica, claridad argumentativa y capacidad de contrastar escenarios.

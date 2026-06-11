@@ -1,10 +1,22 @@
-# Expansión de transmisión
+# 04 · Planificación de expansión de transmisión
 
-Este bloque estudia modelos de planificación de expansión de la red: transporte, DC, híbrido y lineal disyuntivo.
+Este bloque estudia modelos para decidir la construcción de nuevos circuitos o refuerzos de red.
 
-## Estructura sugerida
+## Contenidos
 
-- `modelos/`: formulaciones matemáticas.
-- `datos/`: casos o datos propios del bloque.
-- `notebooks/`: exploración y visualización.
-- `actividades/`: consignas y rúbricas.
+- Modelo de transporte.
+- Modelo DC.
+- Modelo híbrido.
+- Modelo lineal disyuntivo.
+- Comparación entre factibilidad de transporte y factibilidad eléctrica.
+
+## Modelos documentados
+
+- [TNEP transporte](modelos/TNEP_transporte.md)
+- [TNEP DC](modelos/TNEP_DC.md)
+- [TNEP híbrido](modelos/TNEP_hibrido.md)
+- [TNEP lineal disyuntivo](modelos/TNEP_lineal_disyuntivo.md)
+
+## Pregunta orientadora
+
+¿Qué líneas deben construirse para transportar la energía de forma económica y técnicamente factible?

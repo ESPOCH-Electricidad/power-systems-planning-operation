@@ -1,6 +1,3 @@
 title: Planificación y Operación de SEP
-description: Repositorio docente de casos de estudio, modelos matemáticos y actividades para sistemas eléctricos de potencia.
+description: Repositorio académico de modelos, casos y actividades para sistemas eléctricos de potencia.
 theme: minima
-markdown: kramdown
-kramdown:
-  math_engine: mathjax

@@ -1,24 +1,26 @@
 # Caso Garver 6 barras
 
-## Propósito didáctico
+El caso Garver es un sistema didáctico ampliamente utilizado para estudiar expansión de transmisión y, mediante adaptaciones, expansión de generación. Su tamaño reducido facilita analizar decisiones de inversión, límites de capacidad, balance de potencia y sensibilidad ante cambios de demanda o disponibilidad.
 
-Caso transversal para estudiar modelos de planificación y operación de sistemas eléctricos. En este repositorio se usa principalmente para GEP, pero puede adaptarse a OPF y TNEP.
+![Red Garver esquemática](figuras/red_garver_esquematica.png)
 
-## Contenido público
+## Contenido de la carpeta
 
-- `datos_dat/`: archivos `.dat` de prueba para GEP.
-- `datos_csv/`: datos tabulares para visualización y validación.
-- `figuras/`: gráficos generados para clase.
-- `notebooks/`: notebooks de exploración.
+| Carpeta | Descripción |
+|---|---|
+| `datos_dat/` | Datos en formato de modelado para ejercicios de GEP y escenarios asociados |
+| `datos_csv/` | Datos tabulares para visualización y validación |
+| `figuras/` | Esquemas gráficos del sistema |
+| `notebooks/` | Notebooks para explorar datos, graficar información y preparar análisis |
 
-## Uso sugerido
+## Actividades sugeridas
 
-1. Revisar tecnologías existentes y candidatas.
-2. Graficar demanda por periodo.
-3. Comparar costos de inversión, costos variables, emisiones y crédito firme.
-4. Ejecutar el modelo AMPL entregado por el docente.
-5. Interpretar inversión, capacidad acumulada, despacho, reserva y ENS.
+- Identificar barras, demanda, tecnologías candidatas y límites de inversión.
+- Comparar escenario base, demanda alta y disponibilidad hidroeléctrica reducida.
+- Analizar el efecto de la reserva y de la energía no suministrada.
+- Explicar qué datos condicionan la expansión de generación.
+- Relacionar el caso con modelos TNEP y GEP.
 
-## Archivos AMPL
+## Resultados esperados del estudiante
 
-Este repositorio público contiene datos `.dat`, pero no modelos `.mod` ni archivos `.run` completos. El docente puede distribuirlos mediante la plataforma institucional.
+El estudiante debe distinguir entre capacidad instalada, capacidad disponible, generación despachada, inversión y energía no suministrada. También debe justificar cómo cambian las decisiones cuando se modifican los supuestos del caso.
