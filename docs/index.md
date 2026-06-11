@@ -1,37 +1,33 @@
 # Planificación y Operación de Sistemas Eléctricos de Potencia
 
-Este sitio acompaña el repositorio público de la asignatura. Su objetivo es ofrecer una entrada didáctica a modelos de optimización para sistemas eléctricos de potencia mediante casos, guías, notebooks y actividades.
+![Banner](assets/img/banner_operacion_planificacion_sep.svg)
 
-## Acceso rápido
+Este sitio resume la estructura del repositorio académico de la asignatura. El objetivo es organizar formulaciones, casos de estudio, notebooks y actividades para apoyar el aprendizaje de modelos de operación y planificación de sistemas eléctricos de potencia.
 
-- [Guía rápida del repositorio](guia_rapida.md)
-- [Actividad interactiva CDD](actividad_cdd.md)
-- [Recursos interactivos](recursos_interactivos.md)
-- [Evaluación propuesta](evaluacion.md)
+## Organización general
 
-## Mapa del repositorio
+![Mapa de bloques](assets/img/mapa_bloques_repositorio.svg)
 
-![Mapa de bloques](assets/mapa_bloques_repositorio.png)
+| Bloque | Tema | Acceso |
+|---|---|---|
+| 1 | Fundamentos de optimización | [Ver carpeta](https://github.com/ESPOCH-Electricidad/power-systems-planning-operation/tree/main/01_fundamentos_optimizacion) |
+| 2 | Operación de corto plazo | [Ver carpeta](https://github.com/ESPOCH-Electricidad/power-systems-planning-operation/tree/main/02_operacion_corto_plazo) |
+| 3 | Flujo óptimo de potencia | [Ver carpeta](https://github.com/ESPOCH-Electricidad/power-systems-planning-operation/tree/main/03_opf_flujo_optimo_potencia) |
+| 4 | Expansión de transmisión | [Ver carpeta](https://github.com/ESPOCH-Electricidad/power-systems-planning-operation/tree/main/04_tnep_expansion_transmision) |
+| 5 | Expansión de generación | [Ver carpeta](https://github.com/ESPOCH-Electricidad/power-systems-planning-operation/tree/main/05_gep_expansion_generacion) |
+| 6 | Casos de estudio | [Ver carpeta](https://github.com/ESPOCH-Electricidad/power-systems-planning-operation/tree/main/06_casos_de_estudio) |
+| 7 | Presentaciones | [Ver carpeta](https://github.com/ESPOCH-Electricidad/power-systems-planning-operation/tree/main/07_presentaciones) |
+| 8 | Actividades y evaluación | [Ver carpeta](https://github.com/ESPOCH-Electricidad/power-systems-planning-operation/tree/main/08_actividades_y_evaluacion) |
 
-## Bloques de aprendizaje
+## Enfoque de la asignatura
 
-```mermaid
-flowchart LR
-A[Fundamentos de optimización] --> B[Operación: ED, UC, Hidrotérmico]
-B --> C[OPF: DC y AC]
-C --> D[TNEP: expansión de transmisión]
-C --> E[GEP: expansión de generación]
-D --> F[Casos de estudio]
-E --> F
-F --> G[Evaluación e IA aplicada]
-```
+![Horizontes temporales](assets/img/horizontes_temporales_sep.svg)
 
-## Filosofía del repositorio
+La operación y la planificación se diferencian por el horizonte temporal, las variables de decisión y el tipo de restricciones. En operación predominan decisiones de despacho, compromiso de unidades y factibilidad de red. En planificación aparecen decisiones de inversión en generación, transmisión y recursos energéticos.
 
-El repositorio no reemplaza la clase. Funciona como laboratorio abierto para:
+## Recursos destacados
 
-- organizar datos de entrada;
-- documentar modelos matemáticos;
-- preparar actividades de interpretación;
-- usar IA como apoyo docente y objeto de revisión crítica;
-- promover reproducibilidad sin publicar necesariamente todos los modelos completos.
+- [Clasificación de operación y planificación](introduccion_operacion_planificacion.md)
+- [Guía de casos de estudio](casos_de_estudio.md)
+- [Guía de evaluación](evaluacion.md)
+- [Presentaciones de apoyo](https://github.com/ESPOCH-Electricidad/power-systems-planning-operation/tree/main/07_presentaciones)

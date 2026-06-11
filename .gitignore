@@ -1,3 +1,11 @@
+# Sistemas operativos y editores
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
 # Python / notebooks
 __pycache__/
 .ipynb_checkpoints/
@@ -5,26 +13,23 @@ __pycache__/
 .env
 .venv/
 
-# AMPL privado: no publicar modelos ni ejecución completa
+# Archivos de ejecución local y salidas generadas
+*.log
+*.tmp
+*.sol
+*.nl
+*.row
+*.col
 *.mod
 *.run
-*.nl
-*.sol
-*.log
-*.bak
 
-# Resultados que pueden revelar soluciones completas
-resultados_privados/
-soluciones_docente/
-*_solution.*
-
-# Archivos temporales Office/LaTeX
-~$*
+# LaTeX
 *.aux
-*.fdb_latexmk
-*.fls
+*.log
 *.nav
+*.out
 *.snm
 *.toc
-*.vrb
 *.synctex.gz
+*.fls
+*.fdb_latexmk

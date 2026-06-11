@@ -1,7 +1,11 @@
 # OPF-DC
 
-Esta carpeta agrupa datos, actividades y notebooks relacionados con **OPF-DC**.
+Datos y actividades para estudiar el flujo óptimo de potencia con aproximación lineal de red.
 
-Para la formulación matemática, revisar la carpeta `modelos/` del bloque correspondiente.
+## Uso didáctico
 
-> Nota: los archivos `.mod` y `.run` no se publican en este repositorio público si forman parte del material reservado del docente.
+1. Revisar los datos del caso.
+2. Identificar parámetros, unidades y supuestos.
+3. Formular el problema matemático asociado.
+4. Ejecutar la herramienta computacional indicada en clase.
+5. Interpretar resultados y comparar escenarios.

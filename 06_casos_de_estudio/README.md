@@ -1,10 +1,17 @@
-# Casos de estudio
+# 06 · Casos de estudio
 
-Catálogo de datos reutilizables para distintos modelos de operación y planificación.
+Esta sección reúne casos de prueba para distintos modelos de operación y planificación de sistemas eléctricos de potencia.
 
-## Estructura sugerida
+## Casos disponibles
 
-- `modelos/`: formulaciones matemáticas.
-- `datos/`: casos o datos propios del bloque.
-- `notebooks/`: exploración y visualización.
-- `actividades/`: consignas y rúbricas.
+| Caso | Uso sugerido |
+|---|---|
+| [Garver 6 barras](garver_6_barras/) | TNEP, GEP, validación didáctica de resultados |
+| [IEEE 14 barras](ieee_14_barras/) | OPF-DC, OPF-AC, análisis de red |
+| [IEEE 24 RTS](ieee_24_rts/) | Operación horaria, UC, OPF y confiabilidad |
+| [Sistema 3 barras](sistema_3_barras/) | Ejercicios introductorios |
+| [Sistema 5 barras](sistema_5_barras/) | Ejercicios introductorios y comparación de formulaciones |
+
+## Uso recomendado
+
+Seleccionar el caso, revisar sus metadatos, identificar unidades y variables principales, y emplearlo en el bloque de modelos correspondiente.

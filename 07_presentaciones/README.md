@@ -1,10 +1,14 @@
-# Presentaciones
+# 07 · Presentaciones
 
-Plantillas para convertir material técnico en presentaciones docentes interactivas.
+Esta sección contiene material visual de apoyo para las sesiones de clase.
 
-## Estructura sugerida
+## Contenidos
 
-- `modelos/`: formulaciones matemáticas.
-- `datos/`: casos o datos propios del bloque.
-- `notebooks/`: exploración y visualización.
-- `actividades/`: consignas y rúbricas.
+- Presentaciones en LaTeX/Beamer.
+- Figuras introductorias.
+- Esquemas de clasificación de modelos.
+- Material gráfico para explicar horizontes temporales y bloques de decisión.
+
+## Presentación base
+
+- [`beamer_overleaf/presentacion_intro_operacion_planificacion_sep.tex`](beamer_overleaf/presentacion_intro_operacion_planificacion_sep.tex)

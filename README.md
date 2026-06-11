@@ -1,47 +1,49 @@
 # Planificación y Operación de Sistemas Eléctricos de Potencia
 
-Repositorio docente para organizar **casos de estudio, datos de prueba, guías, actividades, notebooks y recursos de IA** aplicados a la operación y planificación de sistemas eléctricos de potencia.
+![Banner del repositorio](docs/assets/img/banner_operacion_planificacion_sep.svg)
 
-> **Criterio de publicación:** este repositorio público prioriza datos, documentación y actividades. Los modelos AMPL completos (`.mod`) y archivos de ejecución (`.run`) pueden mantenerse en la plataforma institucional o en repositorios privados del docente.
+Repositorio académico de apoyo a la asignatura **Planificación y Operación de Sistemas Eléctricos de Potencia**. Organiza formulaciones matemáticas, datos de prueba, casos de estudio, notebooks de exploración y actividades de evaluación para estudiar problemas de operación y planificación de sistemas eléctricos.
+
+El material está estructurado para que el estudiante pueda transitar desde la formulación matemática hasta la interpretación técnica de resultados computacionales.
 
 ## Propósito
 
-- Facilitar el aprendizaje progresivo de modelos de optimización aplicados a sistemas eléctricos.
-- Disponer de casos de prueba reutilizables: Garver, IEEE 14, IEEE 24 RTS y sistemas didácticos.
-- Integrar actividades de análisis, evaluación formativa y uso crítico de IA.
-- Documentar cada modelo matemático en términos de **conjuntos, índices, parámetros, variables, función objetivo y restricciones**.
+- Presentar modelos de optimización aplicados a sistemas eléctricos de potencia.
+- Organizar casos de prueba reutilizables para operación, OPF, TNEP y GEP.
+- Facilitar el análisis de datos mediante notebooks y archivos tabulares.
+- Apoyar actividades de clase, laboratorios, evaluación formativa y discusión técnica.
+- Promover una lectura crítica de las soluciones obtenidas mediante herramientas computacionales.
 
-## Bloques del repositorio
+## Estructura temática
+
+![Clasificación de operación y planificación](docs/assets/img/clasificacion_operacion_planificacion.svg)
 
 | Bloque | Carpeta | Contenido principal | Finalidad didáctica |
 |---|---|---|---|
-| Fundamentos | `01_fundamentos_optimizacion` | LP, MILP, NLP, formulación matemática | Entender la estructura de un problema de optimización antes de modelar SEP |
-| Operación | `02_operacion_corto_plazo` | ED, ED con pérdidas, UC, despacho hidrotérmico | Modelar decisiones operativas de corto plazo |
-| OPF | `03_opf_flujo_optimo_potencia` | OPF-DC, OPF-AC | Relacionar optimización con restricciones de red |
-| TNEP | `04_tnep_expansion_transmision` | Transporte, DC, híbrido, lineal disyuntivo | Decidir expansión de transmisión y comparar formulaciones |
-| GEP | `05_gep_expansion_generacion` | Base, estático con bloques, multianual | Decidir expansión de generación por tecnología y periodo |
-| Casos | `06_casos_de_estudio` | Garver, IEEE 14, IEEE 24 RTS, sistemas didácticos | Reutilizar datos comunes en varios modelos |
-| Presentaciones | `07_presentaciones` | Beamer/Overleaf, HTML, material multimedia | Convertir materiales técnicos en recursos docentes |
-| Evaluación | `08_actividades_y_evaluacion` | Actividades, rúbricas, cuestionarios | Evaluar ejecución, interpretación y pensamiento crítico |
-| IA | `09_ia_aplicada_docencia` | Prompts, respuestas revisadas, errores IA | Documentar cómo se usó IA y cómo fue validada |
+| 1 | [`01_fundamentos_optimizacion`](01_fundamentos_optimizacion/) | LP, MILP, NLP básicos | Comprender la formulación matemática antes de estudiar aplicaciones eléctricas |
+| 2 | [`02_operacion_corto_plazo`](02_operacion_corto_plazo/) | ED, ED con pérdidas, UC, despacho hidrotérmico | Modelar decisiones operativas de corto plazo |
+| 3 | [`03_opf_flujo_optimo_potencia`](03_opf_flujo_optimo_potencia/) | OPF-DC, OPF-AC | Relacionar optimización con restricciones de red |
+| 4 | [`04_tnep_expansion_transmision`](04_tnep_expansion_transmision/) | Transporte, DC, híbrido, lineal disyuntivo | Decidir expansión de red y comparar formulaciones |
+| 5 | [`05_gep_expansion_generacion`](05_gep_expansion_generacion/) | Base, estático con bloques, multianual | Decidir expansión de generación por tecnología y periodo |
+| 6 | [`06_casos_de_estudio`](06_casos_de_estudio/) | Garver, IEEE 14, IEEE 24 RTS, sistemas didácticos | Reutilizar datos comunes en distintos modelos |
+| 7 | [`07_presentaciones`](07_presentaciones/) | Presentaciones, esquemas y recursos gráficos | Apoyar sesiones presenciales, virtuales y autoestudio |
+| 8 | [`08_actividades_y_evaluacion`](08_actividades_y_evaluacion/) | Actividades, cuestionarios y rúbricas | Evaluar formulación, ejecución, interpretación y análisis crítico |
 
-## Cómo usar este repositorio
+## Horizontes temporales
 
-1. Revisa `00_guia_general/guia_estudiante.md`.
-2. Selecciona el bloque del curso.
-3. Lee la formulación matemática del modelo.
-4. Explora los datos del caso de estudio.
-5. Ejecuta el notebook de apoyo si está disponible.
-6. Ejecuta el modelo AMPL entregado por el docente en la plataforma institucional.
-7. Compara, interpreta y documenta resultados.
-8. Responde la actividad o evaluación correspondiente.
+![Horizontes temporales](docs/assets/img/horizontes_temporales_sep.svg)
 
-## Nota sobre reproducibilidad
+La asignatura estudia decisiones que ocurren en distintos horizontes temporales: desde la operación de minutos u horas hasta la planificación de expansión de varios años. Esta separación ayuda a identificar qué variables son operativas, qué variables son de inversión y qué restricciones deben considerarse en cada escala.
 
-Los notebooks incluidos están diseñados para lectura, validación, visualización de datos y ejemplos mínimos. La ejecución completa de AMPL puede realizarse en local o en Google Colab con `amplpy`, según indique el docente.
+## Flujo de trabajo sugerido
 
-## Licencia sugerida
+1. Revisar la formulación matemática del bloque correspondiente.
+2. Identificar conjuntos, parámetros, variables, función objetivo y restricciones.
+3. Explorar el caso de estudio mediante archivos de datos y notebooks.
+4. Ejecutar el modelo computacional indicado por el docente.
+5. Comparar resultados, validar supuestos y responder las actividades.
+6. Elaborar conclusiones técnicas sobre costo, operación, factibilidad, confiabilidad y expansión.
 
-- Material didáctico: Creative Commons Attribution 4.0 International (CC BY 4.0), salvo que se indique otra cosa.
-- Notebooks y scripts auxiliares: MIT License.
-- Casos externos: respetar la licencia y cita de la fuente original.
+## Sitio web del repositorio
+
+La carpeta [`docs`](docs/) contiene una versión navegable de la guía del repositorio para publicarla mediante GitHub Pages.

@@ -1,29 +1,24 @@
-# Guía de contribución
+# Contribuciones
 
-## Criterios para añadir un nuevo caso
+Este repositorio está orientado a materiales académicos de la asignatura. Las contribuciones deben conservar una estructura clara, trazabilidad de datos y finalidad didáctica.
 
-Cada nuevo caso debe incluir:
+## Recomendaciones
 
-1. `README.md` con propósito didáctico.
-2. `metadata.yaml` con fuente, autoría, licencia y usos sugeridos.
-3. Datos en formato abierto (`.csv`, `.dat` o ambos).
-4. Si procede, un notebook de lectura, validación o visualización.
-5. Referencias bibliográficas o enlaces a la fuente original.
+- Documentar la fuente de cada caso de estudio.
+- Mantener nombres de archivos descriptivos y consistentes.
+- Incluir un `README.md` en cada carpeta nueva.
+- Explicar las unidades de los parámetros eléctricos y económicos.
+- Separar datos, figuras, notebooks y actividades.
+- Evitar archivos temporales, credenciales, licencias locales o información personal.
 
-## Criterios para añadir un modelo matemático
+## Estructura mínima para un caso
 
-La descripción del modelo debe contener:
-
-- Objetivo didáctico.
-- Conjuntos e índices.
-- Parámetros.
-- Variables.
-- Función objetivo.
-- Restricciones.
-- Interpretación de resultados.
-- Errores frecuentes.
-- Actividad sugerida.
-
-## Restricción de publicación
-
-No subir archivos `.mod` ni `.run` si forman parte del material reservado del docente. Para esos casos, subir únicamente datos, guías y notebooks de apoyo.
+```text
+nombre_caso/
+├── README.md
+├── metadata.yaml
+├── datos_dat/
+├── datos_csv/
+├── figuras/
+└── notebooks/
+```

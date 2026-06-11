@@ -1,21 +1,21 @@
-# Actividad formativa: interpretación colaborativa del caso Garver GEP
+# Actividad formativa: análisis colaborativo del caso Garver GEP
 
-## Objetivo
+## Propósito
 
-Interpretar datos de entrada y anticipar decisiones de expansión antes de ejecutar el modelo.
+Interpretar datos de entrada y resultados de un modelo de expansión de generación aplicado al caso Garver.
 
 ## Consigna
 
-En grupos de 3 a 4 estudiantes, revisen los datos del caso Garver GEP y respondan:
+En grupos, analicen el caso asignado y respondan:
 
-1. ¿Qué tecnologías existen inicialmente?
-2. ¿Qué tecnologías son candidatas?
-3. ¿Qué tecnología tiene menor costo operativo?
-4. ¿Qué tecnología tiene mayor crédito de capacidad firme?
-5. ¿Qué ocurre si aumenta la demanda de punta?
-6. ¿Qué ocurre si disminuye la disponibilidad hidroeléctrica?
-7. ¿Qué error podría cometer una IA al interpretar estos datos?
+1. ¿Qué tecnologías candidatas están disponibles?
+2. ¿Qué parámetro limita la construcción de cada tecnología?
+3. ¿Qué ocurre si aumenta la demanda de punta?
+4. ¿Qué ocurre si disminuye la disponibilidad hidroeléctrica?
+5. ¿Cómo cambia el costo total del sistema?
+6. ¿Qué restricciones parecen más condicionantes?
+7. ¿Qué validaciones adicionales serían necesarias antes de aceptar el plan?
 
-## Entrega
+## Producto esperado
 
-Publicar una respuesta en Padlet o Google Docs con una tabla de hipótesis antes de resolver el modelo.
+Una síntesis técnica de una página o una presentación breve con tablas, gráficos y conclusiones.

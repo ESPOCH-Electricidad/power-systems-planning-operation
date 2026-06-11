@@ -1,10 +1,21 @@
-# Operación de corto plazo
+# 02 · Operación de corto plazo
 
-Este bloque estudia decisiones operativas como despacho económico, unit commitment y coordinación hidrotérmica.
+Este bloque estudia decisiones operativas que se toman en horizontes de minutos, horas o días.
 
-## Estructura sugerida
+## Contenidos
 
-- `modelos/`: formulaciones matemáticas.
-- `datos/`: casos o datos propios del bloque.
-- `notebooks/`: exploración y visualización.
-- `actividades/`: consignas y rúbricas.
+- Despacho económico sin pérdidas.
+- Despacho económico con pérdidas.
+- Compromiso de unidades.
+- Despacho hidrotérmico.
+
+## Modelos documentados
+
+- [Despacho económico](modelos/ED_despacho_economico.md)
+- [Despacho económico con pérdidas](modelos/ED_con_perdidas.md)
+- [Compromiso de unidades](modelos/UC_unit_commitment.md)
+- [Despacho hidrotérmico](modelos/despacho_hidrotermico.md)
+
+## Pregunta orientadora
+
+¿Cómo se determina la operación de menor costo cumpliendo demanda, límites de generación y restricciones técnicas del sistema?
