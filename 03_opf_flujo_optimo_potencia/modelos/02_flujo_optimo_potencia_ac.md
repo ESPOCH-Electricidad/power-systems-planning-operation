@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/opf_red_dc_ac.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+Cuando se requiere mayor fidelidad eléctrica, el modelo debe considerar tensiones, potencia reactiva y pérdidas. El OPF-AC representa esta realidad mediante ecuaciones no lineales.
+
+## 2. Intuición del modelo
 
 El OPF-AC representa potencia activa, potencia reactiva, tensiones y pérdidas. Es más fiel al sistema eléctrico, pero resulta no lineal y puede ser más difícil de resolver.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -18,7 +22,7 @@ El OPF-AC representa potencia activa, potencia reactiva, tensiones y pérdidas. 
 | Parámetros | $P^D_i$, $Q^D_i$, $G_{ij}$, $B_{ij}$, límites de tensión y generación. |
 | Variables | $P_g$, $Q_g$, $V_i$, $\theta_i$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -60,11 +64,11 @@ $$
 \underline{Q}_g\leq Q_g\leq\overline{Q}_g
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 El resultado debe interpretar tensiones, reactivos, pérdidas, límites activos y diferencias frente a OPF-DC.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_03_opf_dc_ac.md)
 ---

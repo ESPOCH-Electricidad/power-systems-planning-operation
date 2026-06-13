@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/tnep_garver_inversion.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+En redes grandes puede ser útil representar con detalle solo una parte del sistema y simplificar otra. El modelo híbrido busca equilibrio entre tractabilidad y realismo.
+
+## 2. Intuición del modelo
 
 El modelo híbrido combina una representación física detallada en parte de la red y simplificaciones de transporte en otra.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -18,7 +22,7 @@ El modelo híbrido combina una representación física detallada en parte de la 
 | Parámetros | $D_n$, $G^{max}_n$, $c_\ell$, $\overline{F}_\ell$, $x_\ell$, $n^0_\ell$, $\overline{n}_\ell$. |
 | Variables | $n_\ell$, $F_\ell$, $\theta_n$, $P_n$, $ENS_n$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -60,11 +64,11 @@ $$
 F_\ell=\frac{(n^0_\ell+n_\ell)(\theta_i-\theta_j)}{x_\ell}
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 La solución debe analizar corredores seleccionados, costo de inversión, ENS, congestión y diferencias entre formulaciones.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_04_tnep_garver.md)
 ---

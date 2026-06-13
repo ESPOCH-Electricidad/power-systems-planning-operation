@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/modelo_transporte_energia.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+Varias fuentes de energía deben abastecer zonas de demanda. Aunque todavía no se representan leyes eléctricas de red, el modelo permite estudiar asignación de flujos, costos por ruta, suficiencia de oferta y demanda no servida.
+
+## 2. Intuición del modelo
 
 El modelo de transporte asigna flujos desde fuentes de oferta hacia nodos de demanda. Es una formulación previa a los modelos de red, porque considera capacidad y demanda, pero no representa leyes eléctricas como ángulos o reactancias.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -19,7 +23,7 @@ El modelo de transporte asigna flujos desde fuentes de oferta hacia nodos de dem
 | Parámetros | $S_i$: oferta; $D_j$: demanda; $c_{i,j}$: costo de transporte. |
 | Variable | $f_{i,j}$: flujo enviado desde $i$ hacia $j$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -53,13 +57,13 @@ $$
 f_{i,j} \geq 0 \quad \forall i,j
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 El resultado identifica rutas de transporte utilizadas y fuentes marginales. Es útil para comprender después el modelo de transporte en expansión de transmisión.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
-- [Ir a la actividad](../actividades/actividad_01_fundamentos_optimizacion.md)
+- [Ir a la actividad](../actividades/actividad_01B_transporte_energia.md)
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

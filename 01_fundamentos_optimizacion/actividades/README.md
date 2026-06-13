@@ -1,30 +1,28 @@
-# Actividades — 01 fundamentos optimizacion
+# Actividades — Fundamentos de optimización
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)
 
+![Actividad 01](../assets/figuras/teoria/actividad_01_tres_ejercicios.svg)
 
+## Propósito
 
-Actividades — 01 Fundamentos de Optimización
+La evaluación del bloque se organiza en tres ejercicios progresivos. El objetivo no es resolver todavía un problema grande de sistemas eléctricos, sino demostrar dominio de modelación: datos, variables, función objetivo, restricciones, implementación y sensibilidad.
 
-Esta carpeta contiene una evaluación integradora para el bloque de fundamentos. La actividad busca que el estudiante
-repase los modelos revisados previamente en `modelos/` y los reconstruya desde cero en AMPL.
+| Ejercicio | Modelo base | Enlace |
+|---|---|---|
+| A | Programación lineal de producción con recursos limitados | [actividad_01A_produccion_lineal.md](actividad_01A_produccion_lineal.md) |
+| B | Modelo de transporte de energía | [actividad_01B_transporte_energia.md](actividad_01B_transporte_energia.md) |
+| C | Modelo binario de localización y cobertura | [actividad_01C_localizacion_binaria.md](actividad_01C_localizacion_binaria.md) |
 
-## Archivos incluidos
+## Entregables comunes
 
-- `actividad_01_fundamentos_optimizacion.md`: enunciado completo.
-- `datos_actividad_01.csv`: datos base para que el estudiante construya su `.dat`.
-- `rubrica_actividad_01.csv`: rúbrica formal.
-- `plantilla_resultados_actividad_01.csv`: estructura sugerida para el Excel.
-- `figuras/flujo_actividad_01.svg`: figura de flujo de trabajo.
+- `.dat` construido desde las tablas.
+- `.mod` con formulación propia.
+- `.run` de ejecución.
+- `.out` generado por el solver.
+- Excel con resultados y sensibilidad.
+- Informe técnico breve.
 
-## Uso sugerido
-
-1. Revisar primero los modelos documentados.
-2. Leer el enunciado de la actividad.
-3. Construir los datos `.dat` desde las tablas.
-4. Implementar `.mod` y `.run`.
-5. Generar `.out`.
-6. Elaborar Excel e informe PDF.
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

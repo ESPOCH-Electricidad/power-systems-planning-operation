@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/modelo_produccion_lineal.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+Cuando el número de productos, tecnologías o alternativas aumenta, escribir una ecuación por cada caso deja de ser práctico. Este modelo enseña a formular de forma indexada, base para modelos eléctricos con muchos generadores, barras, líneas o escenarios.
+
+## 2. Intuición del modelo
 
 La formulación indexada permite pasar de un ejemplo pequeño a un modelo escalable. En sistemas eléctricos, esta idea se usa para agregar generadores, líneas, tecnologías, periodos o escenarios sin reescribir todas las ecuaciones.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -19,7 +23,7 @@ La formulación indexada permite pasar de un ejemplo pequeño a un modelo escala
 | Parámetros | $c_p$, $a_{r,p}$, $B_r$, $D$, $\overline{x}_p$. |
 | Variable | $x_p$: producción del producto $p$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -53,13 +57,13 @@ $$
 0 \leq x_p \leq \overline{x}_p \quad \forall p \in P
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 La ventaja principal es la escalabilidad. El estudiante debe reconocer que el mismo modelo funciona con dos productos o con cientos de alternativas.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
-- [Ir a la actividad](../actividades/actividad_01_fundamentos_optimizacion.md)
+- [Ir a la actividad](../actividades/actividad_01A_produccion_lineal.md)
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

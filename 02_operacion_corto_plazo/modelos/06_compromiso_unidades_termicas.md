@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/unit_commitment.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+En sistemas reales no todas las unidades pueden encenderse instantáneamente ni operar a cualquier nivel. El UC decide qué unidades estarán encendidas y cuánto producirán.
+
+## 2. Intuición del modelo
 
 Decide qué unidades se encienden, cuándo arrancan y cuánto generan. Es un MILP por sus variables binarias.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -18,7 +22,7 @@ Decide qué unidades se encienden, cuándo arrancan y cuánto generan. Es un MIL
 | Parámetros | $c_g$, $SU_g$, $\underline{P}_g$, $\overline{P}_g$, $RU_g$, $RD_g$, $D_t$. |
 | Variables | $P_{g,t}$, $u_{g,t}$, $v_{g,t}$, $ENS_t$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -52,11 +56,11 @@ $$
 P_{g,t}-P_{g,t-1}\leq RU_g
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 El resultado debe analizar estados, arranques, rampas activas, reserva y costo operativo.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---

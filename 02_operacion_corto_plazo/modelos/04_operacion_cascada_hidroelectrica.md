@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/hidrotermico.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+En una cascada, el uso de agua en una central puede afectar la disponibilidad aguas abajo. El modelo representa volumen, afluencias, turbinamiento y vertimiento.
+
+## 2. Intuición del modelo
 
 Representa embalses conectados. El agua turbinada o vertida en una central puede influir en centrales aguas abajo.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -18,7 +22,7 @@ Representa embalses conectados. El agua turbinada o vertida en una central puede
 | Parámetros | $A_{r,t}$: aportes; $\underline{V}_r$, $\overline{V}_r$; $\rho_r$. |
 | Variables | $V_{r,t}$, $Q_{r,t}$, $S_{r,t}$, $H_{r,t}$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Balance hídrico
 
@@ -44,11 +48,11 @@ $$
 \underline{V}_r\leq V_{r,t}\leq \overline{V}_r
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 El análisis debe interpretar el valor temporal del agua y el efecto de restricciones de volumen.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---

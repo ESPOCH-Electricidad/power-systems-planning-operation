@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/opf_red_dc_ac.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+El despacho económico puede producir una solución barata pero físicamente inviable si la red se congestiona. El OPF-DC introduce barras, líneas, ángulos y límites de transmisión.
+
+## 2. Intuición del modelo
 
 El OPF-DC optimiza el despacho considerando red de transmisión bajo una aproximación lineal. Permite analizar congestión y redispatch sin modelar potencia reactiva ni pérdidas.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -18,7 +22,7 @@ El OPF-DC optimiza el despacho considerando red de transmisión bajo una aproxim
 | Parámetros | $P^D_n$, $c_g$, $x_\ell$, $\overline{F}_\ell$, $\underline{P}_g$, $\overline{P}_g$. |
 | Variables | $P_g$, $\theta_n$, $F_\ell$, $ENS_n$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -60,11 +64,11 @@ $$
 \theta_{ref}=0
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 Debe revisarse qué líneas se saturan, cómo cambia el despacho y si aparece ENS en barras específicas.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_03_opf_dc_ac.md)
 ---

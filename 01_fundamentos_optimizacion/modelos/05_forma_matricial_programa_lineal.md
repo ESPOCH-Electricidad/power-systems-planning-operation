@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/modelo_forma_matricial.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+Todo programa lineal puede representarse mediante matrices y vectores. Esta lectura permite comprender cómo un solver organiza un modelo y por qué es necesario mantener consistencia entre dimensiones, índices y unidades.
+
+## 2. Intuición del modelo
 
 La forma matricial resume un problema lineal usando vectores y matrices. Es útil para entender cómo los solvers organizan la información y por qué es importante mantener consistencia dimensional.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -19,7 +23,7 @@ La forma matricial resume un problema lineal usando vectores y matrices. Es úti
 | Parámetros | $c_j$: costo; $A_{i,j}$: coeficiente; $b_i$: lado derecho. |
 | Variable | $x_j$: decisión. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -45,13 +49,13 @@ $$
 x_j \geq 0 \quad \forall j \in J
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 Esta formulación permite reconocer que modelos eléctricos grandes son extensiones estructuradas de matrices de balance, límites y costos.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
-- [Ir a la actividad](../actividades/actividad_01_fundamentos_optimizacion.md)
+- [Ir a la actividad](../actividades/README.md)
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

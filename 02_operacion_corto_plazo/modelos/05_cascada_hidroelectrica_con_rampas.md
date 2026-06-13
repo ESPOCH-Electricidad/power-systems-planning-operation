@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/hidrotermico.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+La operación hidroeléctrica no puede cambiar ilimitadamente entre horas. Las rampas representan restricciones físicas, ambientales u operativas sobre caudales o potencia.
+
+## 2. Intuición del modelo
 
 Agrega límites de variación temporal para representar cambios máximos de turbinamiento o generación entre periodos.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -18,7 +22,7 @@ Agrega límites de variación temporal para representar cambios máximos de turb
 | Parámetros | $RU_r$, $RD_r$, límites hidráulicos. |
 | Variables | $Q_{r,t}$, $V_{r,t}$, $H_{r,t}$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Rampa subida
 
@@ -44,11 +48,11 @@ $$
 V_{r,t}=V_{r,t-1}+A_{r,t}-Q_{r,t}-S_{r,t}
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 La solución suaviza la operación y puede aumentar costo térmico si restringe el uso hidro en horas críticas.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---

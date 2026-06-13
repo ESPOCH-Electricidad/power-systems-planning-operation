@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/despacho_economico.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+Un operador debe cubrir la demanda en cada hora usando unidades de generación disponibles. La red se representa como un nodo único, por lo que el problema se enfoca en costos y límites de generación.
+
+## 2. Intuición del modelo
 
 El despacho económico asigna generación para cubrir demanda al menor costo sin representar la red. Es el modelo operativo más básico.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -18,7 +22,7 @@ El despacho económico asigna generación para cubrir demanda al menor costo sin
 | Parámetros | $c_g$, $\underline{P}_g$, $\overline{P}_g$, $D_t$, $VOLL$. |
 | Variables | $P_{g,t}$, $ENS_t$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -44,11 +48,11 @@ $$
 \underline{P}_g \leq P_{g,t}\leq \overline{P}_g \quad \forall g,t
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 El resultado permite identificar la unidad marginal, el costo horario y la necesidad de ENS si no hay capacidad suficiente.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---

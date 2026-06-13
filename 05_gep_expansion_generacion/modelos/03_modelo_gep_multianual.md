@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/gep_horizonte_inversion.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+La expansión de generación es una decisión secuencial. Construir hoy afecta la capacidad disponible en años futuros y modifica inversión, operación, ENS y emisiones.
+
+## 2. Intuición del modelo
 
 Extiende el problema a varios años, acumulando capacidad y evaluando escenarios.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -18,7 +22,7 @@ Extiende el problema a varios años, acumulando capacidad y evaluando escenarios
 | Parámetros | $D_{y,b}$, $h_b$, $CAPEX_k$, $FOM_k$, $c_k$, $AF_k$, $FC_k$, $VOLL$, $RM$. |
 | Variables | $Build_{k,y}$, $Cap_{k,y}$, $Gen_{k,y,b}$, $ENS_{y,b}$. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -60,11 +64,11 @@ $$
 \sum_k FC_k Cap_{k,y}+\sum_e FC_e Cap^0_e\geq(1+RM)D^{peak}_y
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 El análisis debe diferenciar capacidad nueva, capacidad acumulada, energía generada, reserva, ENS y costo total.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_05_gep_multianual.md)
 ---

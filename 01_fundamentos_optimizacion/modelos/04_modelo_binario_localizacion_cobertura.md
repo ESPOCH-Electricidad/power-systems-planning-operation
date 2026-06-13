@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/modelo_localizacion_binaria.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+Algunas decisiones de ingeniería no son continuas sino discretas: instalar o no instalar, construir o no construir, encender o apagar. Este modelo introduce esa lógica mediante variables binarias.
+
+## 2. Intuición del modelo
 
 Este modelo introduce variables binarias. La decisión ya no es solo cuánto producir, sino si instalar o no un activo. Esta lógica aparece luego en unit commitment, expansión de transmisión y expansión de generación.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -19,7 +23,7 @@ Este modelo introduce variables binarias. La decisión ya no es solo cuánto pro
 | Parámetros | $C_a$: costo de instalación; $q_{m,a}$: cobertura posible. |
 | Variables | $y_a$: instalación; $z_{m,a}$: asignación de cobertura. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -61,13 +65,13 @@ $$
 y_a,z_{m,a} \in \{0,1\}
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 El resultado debe interpretarse como una decisión de inversión. En sistemas eléctricos, esta estructura es análoga a construir líneas o instalar nueva capacidad.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
-- [Ir a la actividad](../actividades/actividad_01_fundamentos_optimizacion.md)
+- [Ir a la actividad](../actividades/actividad_01C_localizacion_binaria.md)
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

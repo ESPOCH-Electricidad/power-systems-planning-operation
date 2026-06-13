@@ -6,11 +6,15 @@
 
 ![Esquema del modelo](../assets/figuras/modelos/despacho_economico.svg)
 
-## 1. Intuición del modelo
+## 1. Contexto del problema
+
+Las unidades térmicas no siempre tienen costo marginal constante. Una forma práctica de aproximar curvas de costo crecientes es dividir la producción en tramos con costos lineales.
+
+## 2. Intuición del modelo
 
 Representa costos crecientes mediante segmentos lineales. Es útil cuando la curva real de costo no es estrictamente lineal.
 
-## 2. Elementos de la formulación
+## 3. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -18,7 +22,7 @@ Representa costos crecientes mediante segmentos lineales. Es útil cuando la cur
 | Parámetros | $c_{g,k}$, $\overline{P}_{g,k}$, $D_t$. |
 | Variables | $P_{g,k,t}$: generación del tramo. |
 
-## 3. Formulación matemática
+## 4. Formulación matemática
 
 ### Objetivo
 
@@ -44,11 +48,11 @@ $$
 0\leq P_{g,k,t}\leq \overline{P}_{g,k}
 $$
 
-## 4. Interpretación técnica
+## 5. Interpretación técnica
 
 El orden de uso de tramos revela cómo el sistema utiliza primero segmentos de menor costo.
 
-## 5. Actividad relacionada
+## 6. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---
