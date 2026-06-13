@@ -1,5 +1,9 @@
 # Actividad 03 — Flujo óptimo de potencia: OPF-DC y OPF-AC
 
+## 0. Revisión previa obligatoria
+
+Antes de desarrollar esta actividad, el estudiante debe revisar los documentos de la carpeta `../modelos/` del bloque correspondiente. La actividad no consiste en copiar el modelo revisado en clase: primero debe replicar su lógica y luego construir una variante, escenario o extensión propia.
+
 ## 1. Contexto
 
 El flujo óptimo de potencia permite determinar el despacho de generación considerando restricciones de red.

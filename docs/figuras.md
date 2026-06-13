@@ -1,11 +1,11 @@
-# Figuras de apoyo
+# Figuras del repositorio
 
-Las figuras incluidas en este sitio pueden utilizarse en presentaciones, guías de clase o documentos de apoyo.
+Las figuras cumplen una función didáctica: ubicar al estudiante dentro del mapa conceptual de operación y planificación.
 
-| Figura | Archivo |
-|---|---|
-| Banner de la asignatura | [`banner_operacion_planificacion_sep.svg`](assets/img/banner_operacion_planificacion_sep.svg) |
-| Clasificación operación-planificación | [`clasificacion_operacion_planificacion.svg`](assets/img/clasificacion_operacion_planificacion.svg) |
-| Horizontes temporales | [`horizontes_temporales_sep.svg`](assets/img/horizontes_temporales_sep.svg) |
-| Mapa de bloques | [`mapa_bloques_repositorio.svg`](assets/img/mapa_bloques_repositorio.svg) |
-| Ícono SEP Lab | [`logo_sep_lab.svg`](assets/img/logo_sep_lab.svg) |
+## Figuras disponibles
+
+- `assets/img/banner_operacion_planificacion_sep.png`
+- `assets/img/clasificacion_operacion_planificacion.png`
+- `assets/img/horizontes_temporales_sep.png`
+- `assets/img/mapa_bloques_repositorio.png`
+- `assets/img/flujo_laboratorio_modelacion.svg`

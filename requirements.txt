@@ -1,7 +1,5 @@
 pandas
-numpy
 matplotlib
-networkx
-jupyter
-scipy
+openpyxl
 pyyaml
+nbformat

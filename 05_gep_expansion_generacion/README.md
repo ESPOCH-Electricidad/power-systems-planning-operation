@@ -1,20 +1,6 @@
-# 05 · Planificación de expansión de generación
+# 05 Planificación de expansión de generación
 
-Este bloque estudia modelos para decidir la incorporación de nueva capacidad de generación en un horizonte de planificación.
+Este bloque estudia modelos GEP para decidir nueva capacidad de generación considerando demanda, operación, reserva, ENS, emisiones, presupuesto y tecnologías candidatas.
 
-## Contenidos
-
-- GEP base.
-- GEP estático con bloques de carga.
-- GEP multianual.
-- Reserva, energía no suministrada, disponibilidad, costos de inversión y costos operativos.
-
-## Modelos documentados
-
-- [GEP base](modelos/GEP_base.md)
-- [GEP estático con bloques](modelos/GEP_estatico_bloques.md)
-- [GEP multianual](modelos/GEP_multianual.md)
-
-## Pregunta orientadora
-
-¿Qué tecnologías deben instalarse, en qué periodo y bajo qué criterios técnicos y económicos?
+## Nota de unidades
+Los costos de ENS/VOLL se expresan en USD/MWh en la documentación pública. Si un archivo histórico usa kUSD/MWh, debe convertirse o documentarse antes de comparar resultados.

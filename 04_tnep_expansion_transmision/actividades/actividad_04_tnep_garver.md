@@ -1,5 +1,9 @@
 # Actividad 04 — TNEP: expansión de transmisión en sistema Garver simplificado
 
+## 0. Revisión previa obligatoria
+
+Antes de desarrollar esta actividad, el estudiante debe revisar los documentos de la carpeta `../modelos/` del bloque correspondiente. La actividad no consiste en copiar el modelo revisado en clase: primero debe replicar su lógica y luego construir una variante, escenario o extensión propia.
+
 ## 1. Contexto
 
 La planificación de expansión de transmisión determina qué nuevos circuitos deben construirse para transportar energía

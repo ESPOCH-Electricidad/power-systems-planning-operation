@@ -1,17 +1,14 @@
-# 06 · Casos de estudio
+# 06 Casos de estudio
 
-Esta sección reúne casos de prueba para distintos modelos de operación y planificación de sistemas eléctricos de potencia.
+Esta carpeta reúne los casos usados en los distintos modelos de la asignatura. No debe contener casos vacíos; cada caso indica su estado, archivos disponibles, modelo asociado y uso didáctico.
 
-## Casos disponibles
-
-| Caso | Uso sugerido |
-|---|---|
-| [Garver 6 barras](garver_6_barras/) | TNEP, GEP, validación didáctica de resultados |
-| [IEEE 14 barras](ieee_14_barras/) | OPF-DC, OPF-AC, análisis de red |
-| [IEEE 24 RTS](ieee_24_rts/) | Operación horaria, UC, OPF y confiabilidad |
-| [Sistema 3 barras](sistema_3_barras/) | Ejercicios introductorios |
-| [Sistema 5 barras](sistema_5_barras/) | Ejercicios introductorios y comparación de formulaciones |
-
-## Uso recomendado
-
-Seleccionar el caso, revisar sus metadatos, identificar unidades y variables principales, y emplearlo en el bloque de modelos correspondiente.
+| Caso | Estado | Datos disponibles | Modelos asociados |
+|---|---|---|---|
+| `garver_6_barras` | completo | GEP y TNEP | TNEP, GEP |
+| `ieee_14_barras` | parcial documentado | datos OPF-AC | OPF |
+| `ieee_24_rts` | parcial documentado | datos TNEP | TNEP |
+| `ieee_30_barras` | parcial documentado | datos OPF-AC | OPF |
+| `operacion_3_generadores` | completo didáctico | ED y ED por tramos | ED |
+| `operacion_101_generadores` | datos disponibles | ED por tramos | ED escalable |
+| `hidrotermico_didactico` | completo didáctico | hidrotérmico simple, cascada y rampas | ED hidrotérmico |
+| `opf_dc_didactico` | completo didáctico | red OPF-DC | OPF-DC |

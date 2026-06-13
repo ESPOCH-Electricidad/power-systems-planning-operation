@@ -1,21 +1,25 @@
-# Evaluación de actividades
+# Actividades de evaluación por bloque
 
-Las actividades de la asignatura evalúan tres dimensiones: formulación matemática, ejecución computacional e interpretación técnica.
+La evaluación está organizada dentro de cada bloque. Cada carpeta principal contiene una subcarpeta `actividades/` con enunciado, datos tabulados, rúbrica y plantillas de resultados.
 
-## Evidencias sugeridas
-
-| Evidencia | Propósito |
+| Bloque | Actividad |
 |---|---|
-| Formulación del modelo | Verificar comprensión de conjuntos, parámetros, variables, objetivo y restricciones |
-| Ejecución del caso | Comprobar uso correcto de datos y herramientas computacionales |
-| Interpretación de resultados | Relacionar solución numérica con criterios eléctricos y económicos |
-| Análisis de sensibilidad | Evaluar el efecto de cambios en demanda, costos, disponibilidad o capacidad |
-| Discusión técnica | Justificar conclusiones y reconocer límites del modelo |
+| `01_fundamentos_optimizacion` | Formulación LP/MILP/NLP y construcción AMPL desde datos tabulados |
+| `02_operacion_corto_plazo` | ED, UC e hidrotérmico con sensibilidad operativa |
+| `03_opf_flujo_optimo_potencia` | OPF-DC y discusión OPF-AC con congestión |
+| `04_tnep_expansion_transmision` | TNEP transporte, DC, híbrido, disyuntivo y escenarios |
+| `05_gep_expansion_generacion` | GEP multianual con bloques, reserva, ENS, emisiones y escenarios |
+| `06_casos_de_estudio` | Actividad integradora de selección y adaptación de modelos |
 
-## Criterios generales
+## Entregables generales
 
-- Claridad en la definición del problema.
-- Coherencia entre datos, variables y restricciones.
-- Correcta lectura de unidades y resultados.
-- Capacidad de comparar escenarios.
-- Argumentación técnica basada en evidencia.
+```text
+archivo .dat construido desde datos tabulados
+archivo .mod formulado por el estudiante
+archivo .run de ejecución
+archivo .out generado por AMPL
+Excel de interpretación de resultados
+informe técnico en PDF
+```
+
+Cada actividad parte de los modelos explicados en la carpeta `modelos/` del bloque correspondiente.

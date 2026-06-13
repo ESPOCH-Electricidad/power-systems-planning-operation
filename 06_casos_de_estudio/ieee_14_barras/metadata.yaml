@@ -1,3 +1,7 @@
-nombre: IEEE 14 barras
-fuente_sugerida: MATPOWER case14 / PGLib OPF case14
-estado: pendiente_de_carga_de_datos
+case_id: ieee_14_barras
+estado: documentado
+descripcion: "Caso parcial documentado para OPF-AC y adaptación OPF-DC. Incluye datos usados en clase."
+formato_datos: [dat]
+fuente: "Material docente de la asignatura; verificar fuente original antes de publicación externa ampliada."
+licencia_datos: "Uso académico docente"
+ultima_actualizacion: "2026-06-13"

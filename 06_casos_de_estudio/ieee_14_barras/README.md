@@ -1,10 +1,13 @@
-# IEEE 14 barras
+# Caso IEEE 14 barras
 
-Carpeta preparada para organizar datos del sistema IEEE 14 barras en actividades de flujo de potencia, OPF-DC y OPF-AC.
+## Descripción
 
-## Uso sugerido
+Caso parcial documentado para OPF-AC y adaptación OPF-DC. Incluye datos usados en clase.
 
-- Identificación de barras, generadores, cargas y ramas.
-- Comparación entre aproximación DC y formulación AC.
-- Análisis de límites de generación, tensiones y flujos.
-- Validación de resultados con herramientas de simulación.
+## Archivos de datos
+
+Ver carpeta `datos_dat/`.
+
+## Uso didáctico
+
+El estudiante debe transformar estos datos en el formato requerido por su propio archivo `.dat`, formular el modelo y validar resultados.

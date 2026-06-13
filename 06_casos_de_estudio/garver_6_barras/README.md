@@ -1,26 +1,13 @@
 # Caso Garver 6 barras
 
-El caso Garver es un sistema didáctico ampliamente utilizado para estudiar expansión de transmisión y, mediante adaptaciones, expansión de generación. Su tamaño reducido facilita analizar decisiones de inversión, límites de capacidad, balance de potencia y sensibilidad ante cambios de demanda o disponibilidad.
+## Descripción
 
-![Red Garver esquemática](figuras/red_garver_esquematica.png)
+Caso de referencia didáctico para comparar modelos de expansión de transmisión y generación. Incluye datos TNEP y GEP en distintas formulaciones.
 
-## Contenido de la carpeta
+## Archivos de datos
 
-| Carpeta | Descripción |
-|---|---|
-| `datos_dat/` | Datos en formato de modelado para ejercicios de GEP y escenarios asociados |
-| `datos_csv/` | Datos tabulares para visualización y validación |
-| `figuras/` | Esquemas gráficos del sistema |
-| `notebooks/` | Notebooks para explorar datos, graficar información y preparar análisis |
+Ver carpeta `datos_dat/`.
 
-## Actividades sugeridas
+## Uso didáctico
 
-- Identificar barras, demanda, tecnologías candidatas y límites de inversión.
-- Comparar escenario base, demanda alta y disponibilidad hidroeléctrica reducida.
-- Analizar el efecto de la reserva y de la energía no suministrada.
-- Explicar qué datos condicionan la expansión de generación.
-- Relacionar el caso con modelos TNEP y GEP.
-
-## Resultados esperados del estudiante
-
-El estudiante debe distinguir entre capacidad instalada, capacidad disponible, generación despachada, inversión y energía no suministrada. También debe justificar cómo cambian las decisiones cuando se modifican los supuestos del caso.
+El estudiante debe transformar estos datos en el formato requerido por su propio archivo `.dat`, formular el modelo y validar resultados.

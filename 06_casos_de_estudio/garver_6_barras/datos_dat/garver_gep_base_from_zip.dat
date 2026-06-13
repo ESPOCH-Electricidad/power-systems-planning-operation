@@ -20,7 +20,7 @@ param Pdem :=
 
 param Emi_max := 2025 900 2030 950 2035 1000;
 param ENS_max := 2025 0 2030 0 2035 0;
-param ENS_Cost := 1.533;
+param ENS_Cost := 1533; # USD/MWh
 param reserve_margin := 0.15;
 
 param IC_max default 0 :=

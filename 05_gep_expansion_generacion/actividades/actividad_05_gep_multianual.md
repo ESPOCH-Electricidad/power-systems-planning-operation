@@ -1,5 +1,9 @@
 # Actividad 05 — GEP: planificación de expansión de generación multianual
 
+## 0. Revisión previa obligatoria
+
+Antes de desarrollar esta actividad, el estudiante debe revisar los documentos de la carpeta `../modelos/` del bloque correspondiente. La actividad no consiste en copiar el modelo revisado en clase: primero debe replicar su lógica y luego construir una variante, escenario o extensión propia.
+
 ## 1. Contexto
 
 La planificación de expansión de generación decide qué tecnologías deben incorporarse al sistema, en qué periodo y con qué

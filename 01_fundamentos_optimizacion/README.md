@@ -1,20 +1,11 @@
-# 01 · Fundamentos de optimización
+# 01 Fundamentos de optimización
 
-Este bloque introduce la estructura general de los problemas de optimización utilizados en sistemas eléctricos de potencia.
+Este bloque introduce la formulación algebraica de problemas de optimización antes de estudiar aplicaciones eléctricas. Los ejemplos se apoyan en modelos revisados en clase: fábrica de pinturas, transporte de energía, localización de antenas y forma matricial general.
 
-## Contenidos
+## Secuencia sugerida
 
-- Programación lineal (LP).
-- Programación lineal entera mixta (MILP).
-- Programación no lineal (NLP).
-- Elementos de una formulación: conjuntos, índices, parámetros, variables, función objetivo y restricciones.
-
-## Modelos documentados
-
-- [LP básico](modelos/LP_basico.md)
-- [MILP básico](modelos/MILP_basico.md)
-- [NLP básico](modelos/NLP_basico.md)
-
-## Actividad sugerida
-
-Comparar un mismo problema de decisión formulado como LP y como MILP, identificando el efecto de variables binarias o enteras sobre la solución.
+1. Revisar `modelos/01_LP_fabrica_pinturas.md`.
+2. Revisar `modelos/02_LP_transporte_energia.md`.
+3. Revisar `modelos/03_MILP_localizacion_antenas.md`.
+4. Revisar `modelos/04_forma_matricial_lp.md`.
+5. Resolver la actividad en `actividades/`.

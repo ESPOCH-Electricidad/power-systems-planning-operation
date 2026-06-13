@@ -1,10 +1,13 @@
-# IEEE 24 RTS
+# Caso IEEE 24 RTS
 
-Carpeta preparada para organizar datos del sistema IEEE 24 Reliability Test System en actividades de operación horaria, compromiso de unidades, OPF y confiabilidad.
+## Descripción
 
-## Uso sugerido
+Caso parcial documentado para TNEP. Incluye datos en formulaciones transporte, heurística, híbrida y disyuntiva.
 
-- Análisis de demanda horaria.
-- Compromiso de unidades.
-- Despacho y reserva.
-- Comparación de escenarios de operación.
+## Archivos de datos
+
+Ver carpeta `datos_dat/`.
+
+## Uso didáctico
+
+El estudiante debe transformar estos datos en el formato requerido por su propio archivo `.dat`, formular el modelo y validar resultados.

@@ -1,16 +1,12 @@
 # Casos de estudio
 
-Los casos de estudio permiten reutilizar conjuntos de datos en distintos modelos. Un mismo sistema de prueba puede emplearse para flujo de potencia, OPF, TNEP o GEP, dependiendo de los datos disponibles y de las simplificaciones adoptadas.
+Los casos de estudio se almacenan en `06_casos_de_estudio/`. Cada caso incluye descripción técnica, metadatos, datos disponibles y usos sugeridos.
 
-## Casos incluidos
-
-| Caso | Uso sugerido | Estado |
+| Caso | Estado | Usos principales |
 |---|---|---|
-| Garver 6 barras | TNEP, GEP, validaciones didácticas | Disponible |
-| IEEE 14 barras | OPF-DC, OPF-AC, análisis de red | Carpeta preparada |
-| IEEE 24 RTS | UC, OPF, confiabilidad, operación horaria | Carpeta preparada |
-| Sistemas 3 y 5 barras | Ejercicios introductorios | Carpeta preparada |
-
-## Organización recomendada
-
-Cada caso debe incluir metadatos, datos en formato tabular, datos en formato de modelado, figuras de apoyo y notebooks de exploración.
+| Garver 6 barras | Completo | TNEP, GEP, comparación de expansión |
+| IEEE 14 barras | Parcial con datos OPF | OPF-DC/AC |
+| IEEE 24 RTS | Parcial con datos TNEP | TNEP, confiabilidad, planificación |
+| IEEE 30 barras | Parcial con datos OPF | OPF-AC |
+| Operación 3 generadores | Completo didáctico | ED y ED por tramos |
+| Hidrotérmico didáctico | Completo didáctico | ED hidrotérmico y cascada |

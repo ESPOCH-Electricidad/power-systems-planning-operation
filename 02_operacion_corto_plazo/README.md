@@ -1,21 +1,12 @@
-# 02 · Operación de corto plazo
+# 02 Operación de corto plazo
 
-Este bloque estudia decisiones operativas que se toman en horizontes de minutos, horas o días.
+Este bloque estudia decisiones operativas: despacho económico, costos por tramos, coordinación hidrotérmica y restricciones temporales. La secuencia parte del balance de potencia y avanza hacia embalses, cascadas y rampas.
 
-## Contenidos
+## Secuencia sugerida
 
-- Despacho económico sin pérdidas.
-- Despacho económico con pérdidas.
-- Compromiso de unidades.
-- Despacho hidrotérmico.
-
-## Modelos documentados
-
-- [Despacho económico](modelos/ED_despacho_economico.md)
-- [Despacho económico con pérdidas](modelos/ED_con_perdidas.md)
-- [Compromiso de unidades](modelos/UC_unit_commitment.md)
-- [Despacho hidrotérmico](modelos/despacho_hidrotermico.md)
-
-## Pregunta orientadora
-
-¿Cómo se determina la operación de menor costo cumpliendo demanda, límites de generación y restricciones técnicas del sistema?
+1. `modelos/01_ED_uninodal.md`
+2. `modelos/02_ED_piecewise.md`
+3. `modelos/03_despacho_hidrotermico_simple.md`
+4. `modelos/04_cascada_hidroelectrica.md`
+5. `modelos/05_cascada_con_rampas.md`
+6. Actividad en `actividades/`.

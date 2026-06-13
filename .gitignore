@@ -1,35 +1,23 @@
-# Sistemas operativos y editores
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-.vscode/
-.idea/
-
-# Python / notebooks
 __pycache__/
+*.py[cod]
 .ipynb_checkpoints/
-*.pyc
-.env
 .venv/
-
-# Archivos de ejecución local y salidas generadas
-*.log
+venv/
+~$*
 *.tmp
+*.bak
+*.out
 *.sol
 *.nl
 *.row
 *.col
+*.log
 *.mod
 *.run
-
-# LaTeX
-*.aux
-*.log
-*.nav
-*.out
-*.snm
-*.toc
-*.synctex.gz
-*.fls
-*.fdb_latexmk
+soluciones_docente/
+soluciones_docente_privadas/
+resultados_privados/
+claves/
+licencias/
+.DS_Store
+Thumbs.db
