@@ -2,41 +2,50 @@
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)
 
+## 1. Tema asociado
 
+**Tema principal:** TNEP y GEP
 
-## Estado
+## 2. Contexto del caso
 
-**Completo.**
+El caso Garver es el caso transversal más importante del repositorio. Se usa para estudiar expansión de transmisión y expansión de generación porque permite observar cómo la ubicación de generación, demanda y corredores condiciona la decisión de inversión.
 
-## Propósito
+## 3. ¿Cuándo usar este caso?
 
-Sistema didáctico para estudiar expansión de transmisión y generación. Es el caso principal del repositorio para comparar formulaciones TNEP y GEP.
+| Bloque | Uso recomendado |
+|---|---|
+| 04 TNEP | modelos de transporte, DC, híbrido y disyuntivo |
+| 05 GEP | GEP base, bloques de carga y multianual |
+| 06 Integrador | comparación entre expansión de red y generación |
 
-## Datos disponibles
+## 4. Datos disponibles
 
 | Archivo | Descripción |
 |---|---|
-| `datos/garver_tnep_transporte.dat` | Datos para modelo de transporte TNEP. |
-| `datos/garver_tnep_dc.dat` | Datos para formulación DC de expansión. |
-| `datos/garver_gep_base.dat` | Datos de GEP base. |
-| `datos/garver_gep_static_blocks.dat` | Datos de GEP con bloques de demanda. |
-| `datos/garver_gep_multiyear.dat` | Datos de GEP multianual. |
-| `figuras/Garvers-6-bus-System.png` | Figura de referencia del sistema. |
+| `garver_gep_base.dat` | Datos disponibles para el caso |
+| `garver_gep_multiyear.dat` | Datos disponibles para el caso |
+| `garver_gep_static_blocks.dat` | Datos disponibles para el caso |
+| `garver_tnep_dc.dat` | Datos disponibles para el caso |
+| `garver_tnep_transporte.dat` | Datos disponibles para el caso |
 
-## Usos recomendados
+## 5. Flujo de trabajo sugerido
 
-| Modelo | Uso |
+1. Revisar qué modelo se desea aplicar.
+2. Identificar datos disponibles y unidades.
+3. Adaptar los datos al `.dat` del modelo correspondiente.
+4. Ejecutar el modelo y verificar factibilidad.
+5. Graficar resultados: generación, flujos, inversión, ENS o tensiones según corresponda.
+6. Comparar el caso base con al menos un escenario de sensibilidad.
+
+## 6. Resultados que debe producir el estudiante
+
+| Tipo de análisis | Resultado mínimo |
 |---|---|
-| TNEP Transporte | Comparar flujos sin ángulos. |
-| TNEP DC | Evaluar inversión con restricciones de red. |
-| GEP | Estudiar expansión de generación y reserva. |
+| Operación | generación, costo, ENS, unidad marginal |
+| OPF | flujos, límites activos, tensiones o ángulos |
+| TNEP | corredores construidos, costo de inversión, ENS |
+| GEP | capacidad nueva, capacidad acumulada, generación por bloque |
 
-## Recomendaciones de uso
-
-1. Revisar el archivo de datos antes de construir el `.dat` propio.
-2. Verificar unidades y escalas económicas.
-3. Documentar toda adaptación realizada.
-4. Comparar los resultados con el comportamiento esperado del sistema.
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

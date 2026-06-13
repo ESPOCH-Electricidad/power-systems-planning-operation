@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-En redes grandes puede ser útil representar con detalle solo una parte del sistema y simplificar otra. El modelo híbrido busca equilibrio entre tractabilidad y realismo.
+El modelo híbrido equilibra detalle físico y facilidad computacional representando partes de la red con diferente nivel de detalle.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Compare una aproximación híbrida frente a transporte y DC.
+
+## 3. Datos que debe reconocer el estudiante
+
+- zona detallada;\n- zona simplificada;\n- corredores;\n- costos;\n- límites.
+
+## 4. Intuición del modelo
 
 El modelo híbrido combina una representación física detallada en parte de la red y simplificaciones de transporte en otra.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ El modelo híbrido combina una representación física detallada en parte de la 
 | Parámetros | $D_n$, $G^{max}_n$, $c_\ell$, $\overline{F}_\ell$, $x_\ell$, $n^0_\ell$, $\overline{n}_\ell$. |
 | Variables | $n_\ell$, $F_\ell$, $\theta_n$, $P_n$, $ENS_n$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -64,11 +72,11 @@ $$
 F_\ell=\frac{(n^0_\ell+n_\ell)(\theta_i-\theta_j)}{x_\ell}
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 La solución debe analizar corredores seleccionados, costo de inversión, ENS, congestión y diferencias entre formulaciones.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_04_tnep_garver.md)
 ---

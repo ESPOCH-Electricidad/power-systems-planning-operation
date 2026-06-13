@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-Un operador debe cubrir la demanda en cada hora usando unidades de generación disponibles. La red se representa como un nodo único, por lo que el problema se enfoca en costos y límites de generación.
+El operador del sistema debe cubrir la demanda horaria usando generadores con costos y límites. La red se ignora, por lo que el sistema se trata como un solo nodo.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Determine la generación óptima de cada unidad para minimizar el costo operativo.
+
+## 3. Datos que debe reconocer el estudiante
+
+- demanda por hora;\n- costos variables;\n- límites de generación;\n- penalización por energía no servida.
+
+## 4. Intuición del modelo
 
 El despacho económico asigna generación para cubrir demanda al menor costo sin representar la red. Es el modelo operativo más básico.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ El despacho económico asigna generación para cubrir demanda al menor costo sin
 | Parámetros | $c_g$, $\underline{P}_g$, $\overline{P}_g$, $D_t$, $VOLL$. |
 | Variables | $P_{g,t}$, $ENS_t$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -48,11 +56,11 @@ $$
 \underline{P}_g \leq P_{g,t}\leq \overline{P}_g \quad \forall g,t
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 El resultado permite identificar la unidad marginal, el costo horario y la necesidad de ENS si no hay capacidad suficiente.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---

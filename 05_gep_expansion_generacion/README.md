@@ -1,46 +1,56 @@
-# 05 — Planificación de expansión de generación
+# 05 — Expansión de generación
 
 > [Menú principal](../README.md) · [Índice del sitio](../docs/index.md) · [Ruta de aprendizaje](../docs/learning_path.md) · [Modelos](../docs/modelos.md) · [Casos](../docs/casos_de_estudio.md) · [Evaluación](../docs/evaluacion.md)
 
-
-
 ![Mapa visual del bloque](../docs/assets/img/bloques/05_gep.svg)
 
-## 1. Propósito del bloque
+## 1. Contexto y propósito
 
-El GEP decide qué capacidad de generación instalar, cuándo instalarla y cómo operarla de manera representativa para cubrir demanda futura, reserva y criterios económicos o ambientales.
+La expansión de generación decide qué tecnologías instalar, en qué cantidad y en qué periodo. El bloque integra crecimiento de demanda, costos de inversión, costos operativos, reserva, energía no servida y escenarios.
 
-![Decisiones GEP](assets/figuras/teoria/gep_decisiones.svg)
+La pregunta central es: **qué capacidad debe instalarse para abastecer demanda futura con costo y riesgo aceptables?**
 
-## 2. Estructura conceptual
+![Figura conceptual](assets/figuras/conceptos/gep_decisiones.svg)
 
-La capacidad acumulada de una tecnología candidata $k$ en el año $y$ puede escribirse como:
+## 2. Conceptos que se desarrollan
 
-$$
-Cap_{k,y} = Cap_{k,y-1} + Build_{k,y}
-$$
+| Concepto | Uso didáctico |
+|---|---|
+| GEP estático | Decisión de capacidad en un periodo representativo. |
+| Bloques de carga | Vincular inversión con operación anual aproximada. |
+| Multianual | Acumular capacidad y decisiones en varios años. |
+| Escenarios | Analizar demanda, costos, hidrología y emisiones. |
 
-El balance por bloque de carga es:
+## 3. Ecuación base del bloque
 
-$$
-\sum_{k \in K} Gen_{k,y,b} + \sum_{e \in E} Gen_{e,y,b} + ENS_{y,b}
-= D_{y,b}
-$$
-
-La reserva firme exige:
+La estructura común de los modelos puede leerse como una optimización de costo o inversión sujeta a balance, límites y reglas operativas:
 
 $$
-\sum_{k \in K} FC_k Cap_{k,y} + \sum_{e \in E} FC_e Cap^0_e
-\geq (1+RM)D^{peak}_{y}
+\min \; C^{op} + C^{inv} + C^{ENS}
 $$
 
-## 3. Modelos del bloque
+sujeto a restricciones de balance, capacidad, disponibilidad, reserva y factibilidad técnica. Cada modelo del bloque especializa esta estructura general.
+
+## 4. Modelos del bloque
 
 | Modelo | Acceso |
 |---|---|
-| GEP estático | [Abrir](modelos/01_modelo_gep_estatico_capacidad.md) |
-| GEP con bloques | [Abrir](modelos/02_modelo_gep_bloques_carga.md) |
+| GEP estático de capacidad | [Abrir](modelos/01_modelo_gep_estatico_capacidad.md) |
+| GEP con bloques de carga | [Abrir](modelos/02_modelo_gep_bloques_carga.md) |
 | GEP multianual | [Abrir](modelos/03_modelo_gep_multianual.md) |
+
+## 5. Actividad principal
+
+- [Abrir actividad del bloque](actividades/actividad_05_gep_multianual.md)
+
+## 6. Preguntas de control
+
+1. ¿Cuál es la decisión principal del modelo?
+2. ¿Qué parámetros condicionan más la solución?
+3. ¿Qué restricciones podrían volverse activas?
+4. ¿Qué resultado debe graficarse para interpretar la solución?
+5. ¿Qué limitaciones tiene la formulación?
+
 ---
 
 > [Menú principal](../README.md) · [Índice del sitio](../docs/index.md) · [Ruta de aprendizaje](../docs/learning_path.md) · [Modelos](../docs/modelos.md) · [Casos](../docs/casos_de_estudio.md) · [Evaluación](../docs/evaluacion.md)

@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-La operación hidroeléctrica no puede cambiar ilimitadamente entre horas. Las rampas representan restricciones físicas, ambientales u operativas sobre caudales o potencia.
+La operación hidroeléctrica real no puede cambiar bruscamente. Las rampas limitan variaciones de caudal o generación.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Extienda la cascada incorporando límites de variación entre periodos.
+
+## 3. Datos que debe reconocer el estudiante
+
+- rampas;\n- caudales;\n- volúmenes;\n- generación;\n- límites hidráulicos.
+
+## 4. Intuición del modelo
 
 Agrega límites de variación temporal para representar cambios máximos de turbinamiento o generación entre periodos.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ Agrega límites de variación temporal para representar cambios máximos de turb
 | Parámetros | $RU_r$, $RD_r$, límites hidráulicos. |
 | Variables | $Q_{r,t}$, $V_{r,t}$, $H_{r,t}$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Rampa subida
 
@@ -48,11 +56,11 @@ $$
 V_{r,t}=V_{r,t-1}+A_{r,t}-Q_{r,t}-S_{r,t}
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 La solución suaviza la operación y puede aumentar costo térmico si restringe el uso hidro en horas críticas.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---

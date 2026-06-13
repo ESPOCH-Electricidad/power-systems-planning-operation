@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-Un planificador necesita decidir nuevos corredores de transmisión. El modelo de transporte ofrece una primera aproximación de capacidad e inversión, sin representar aún la física completa de flujos.
+La expansión de transmisión puede iniciar con una aproximación de transporte, útil para detectar corredores relevantes sin usar ángulos.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Decida circuitos nuevos minimizando inversión y energía no servida.
+
+## 3. Datos que debe reconocer el estudiante
+
+- barras;\n- demanda;\n- generación;\n- corredores;\n- costos;\n- capacidades.
+
+## 4. Intuición del modelo
 
 El modelo de transporte decide inversiones considerando capacidad de corredores, sin imponer relación flujo-ángulo. Es una primera aproximación económica.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ El modelo de transporte decide inversiones considerando capacidad de corredores,
 | Parámetros | $D_n$, $G^{max}_n$, $c_\ell$, $\overline{F}_\ell$, $x_\ell$, $n^0_\ell$, $\overline{n}_\ell$. |
 | Variables | $n_\ell$, $F_\ell$, $\theta_n$, $P_n$, $ENS_n$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -64,11 +72,11 @@ $$
 F_\ell=\frac{(n^0_\ell+n_\ell)(\theta_i-\theta_j)}{x_\ell}
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 La solución debe analizar corredores seleccionados, costo de inversión, ENS, congestión y diferencias entre formulaciones.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_04_tnep_garver.md)
 ---

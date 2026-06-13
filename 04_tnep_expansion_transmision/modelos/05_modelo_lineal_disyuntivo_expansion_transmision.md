@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-Una línea candidata solo puede transportar flujo si se construye. Las restricciones de activación representan esta relación lógica entre inversión y operación.
+Las restricciones disyuntivas evitan que una línea candidata transporte potencia si no fue construida.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Active flujos candidatos solo cuando la inversión se realiza.
+
+## 3. Datos que debe reconocer el estudiante
+
+- variables binarias o enteras;\n- big-M;\n- candidatos;\n- límites de flujo.
+
+## 4. Intuición del modelo
 
 El modelo disyuntivo activa el uso de una línea candidata únicamente cuando la inversión correspondiente se realiza.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ El modelo disyuntivo activa el uso de una línea candidata únicamente cuando la
 | Parámetros | $D_n$, $G^{max}_n$, $c_\ell$, $\overline{F}_\ell$, $x_\ell$, $n^0_\ell$, $\overline{n}_\ell$. |
 | Variables | $n_\ell$, $F_\ell$, $\theta_n$, $P_n$, $ENS_n$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -64,11 +72,11 @@ $$
 F_\ell=\frac{(n^0_\ell+n_\ell)(\theta_i-\theta_j)}{x_\ell}
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 La solución debe analizar corredores seleccionados, costo de inversión, ENS, congestión y diferencias entre formulaciones.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_04_tnep_garver.md)
 ---

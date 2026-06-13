@@ -1,51 +1,66 @@
-# Actividad 01B — Modelo de transporte de energía
+# Actividad 01B — Transporte de energía entre fuentes y cargas
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)
 
-## 1. Contexto del problema
+## 1. Contexto
 
-Tres centrales deben abastecer cuatro zonas de demanda. El objetivo es minimizar el costo de transporte de energía entre centrales y zonas. Este modelo no representa todavía las leyes físicas de una red eléctrica; es un modelo de asignación oferta-demanda.
-
-Esta actividad replica y extiende el [modelo de transporte de energía](../modelos/03_modelo_transporte_energia.md).
+Un sistema simplificado tiene tres fuentes de energía y tres centros de carga. Se desea asignar el suministro desde cada fuente hacia cada carga minimizando el costo de transporte. Este ejercicio permite comprender oferta, demanda, flujos y costos antes de estudiar OPF o TNEP.
 
 ## 2. Datos
 
-| Central | Oferta máxima [MWh] |
+| Fuente | Capacidad disponible [MW] |
 |---|---:|
-| C1 | 120 |
-| C2 | 100 |
+| F1 | 100 |
+| F2 | 80 |
+| F3 | 120 |
+
+| Carga | Demanda [MW] |
+|---|---:|
+| C1 | 70 |
+| C2 | 110 |
 | C3 | 90 |
 
-| Zona | Demanda [MWh] |
+| Costo [USD/MWh] | C1 | C2 | C3 |
+|---|---:|---:|---:|
+| F1 | 5 | 7 | 9 |
+| F2 | 6 | 4 | 8 |
+| F3 | 9 | 6 | 3 |
+
+## 3. Trabajo solicitado
+
+Formule un modelo de transporte que minimice el costo total. Luego resuelva tres variantes:
+
+1. aumentar demanda de C2 en 20 MW;
+2. reducir capacidad de F3 a 90 MW;
+3. prohibir el envío F1 → C3.
+
+## 4. Preguntas de análisis
+
+1. ¿Qué rutas de transporte se usan en el caso base?
+2. ¿Qué fuente queda más comprometida?
+3. ¿Qué ocurre cuando se prohíbe una ruta?
+4. ¿Qué diferencia conceptual existe entre este modelo y un OPF?
+
+
+## Entregables
+
+- `.dat`: datos construidos desde las tablas.
+- `.mod`: formulación desarrollada por el estudiante.
+- `.run`: archivo de ejecución.
+- `.out`: salida del solver.
+- `.xlsx`: resultados y gráficos.
+- `.pdf`: informe técnico breve.
+
+## Criterios de evaluación
+
+| Criterio | Peso |
 |---|---:|
-| Z1 | 70 |
-| Z2 | 80 |
-| Z3 | 60 |
-| Z4 | 75 |
+| Interpretación del enunciado y datos | 20 % |
+| Formulación matemática | 30 % |
+| Implementación computacional | 20 % |
+| Resultados y gráficos | 15 % |
+| Análisis de sensibilidad | 15 % |
 
-| Central/Zona | Z1 | Z2 | Z3 | Z4 |
-|---|---:|---:|---:|---:|
-| C1 | 4 | 6 | 9 | 7 |
-| C2 | 5 | 4 | 7 | 6 |
-| C3 | 8 | 5 | 4 | 3 |
-
-## 3. Formulación esperada
-
-$$
-\min Z = \sum_{i\in I}\sum_{j\in J} c_{i,j} f_{i,j}
-$$
-
-$$
-\sum_{j\in J} f_{i,j} \leq S_i \quad \forall i\in I
-$$
-
-$$
-\sum_{i\in I} f_{i,j} \geq D_j \quad \forall j\in J
-$$
-
-## 4. Extensiones
-
-Agregar penalización por demanda no servida, aumentar Z4 en 25 %, reducir oferta C2 en 30 % y prohibir el envío C1-Z3.
 
 ---
 

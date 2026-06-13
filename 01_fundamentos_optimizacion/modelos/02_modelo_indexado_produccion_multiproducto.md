@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-Cuando el número de productos, tecnologías o alternativas aumenta, escribir una ecuación por cada caso deja de ser práctico. Este modelo enseña a formular de forma indexada, base para modelos eléctricos con muchos generadores, barras, líneas o escenarios.
+El problema anterior puede crecer rápidamente. En lugar de escribir una ecuación por cada producto, se usa notación indexada. Esta es la forma natural de construir modelos de sistemas eléctricos con decenas de generadores, barras o líneas.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Reformule el problema usando conjuntos e índices para que el número de productos pueda cambiar sin modificar la estructura matemática.
+
+## 3. Datos que debe reconocer el estudiante
+
+- conjunto de alternativas;\n- matriz de consumo por recurso;\n- disponibilidad de cada recurso;\n- requerimiento o demanda mínima.
+
+## 4. Intuición del modelo
 
 La formulación indexada permite pasar de un ejemplo pequeño a un modelo escalable. En sistemas eléctricos, esta idea se usa para agregar generadores, líneas, tecnologías, periodos o escenarios sin reescribir todas las ecuaciones.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -23,7 +31,7 @@ La formulación indexada permite pasar de un ejemplo pequeño a un modelo escala
 | Parámetros | $c_p$, $a_{r,p}$, $B_r$, $D$, $\overline{x}_p$. |
 | Variable | $x_p$: producción del producto $p$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -57,13 +65,13 @@ $$
 0 \leq x_p \leq \overline{x}_p \quad \forall p \in P
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 La ventaja principal es la escalabilidad. El estudiante debe reconocer que el mismo modelo funciona con dos productos o con cientos de alternativas.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
-- [Ir a la actividad](../actividades/actividad_01A_produccion_lineal.md)
+- [Ir a la actividad](../actividades/actividad_01_fundamentos_optimizacion.md)
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

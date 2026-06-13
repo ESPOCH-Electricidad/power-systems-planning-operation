@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-En una cascada, el uso de agua en una central puede afectar la disponibilidad aguas abajo. El modelo representa volumen, afluencias, turbinamiento y vertimiento.
+En una cascada, los embalses están conectados. El agua turbinada o vertida aguas arriba puede afectar centrales aguas abajo.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Modele el balance de volumen y generación de una cascada hidroeléctrica.
+
+## 3. Datos que debe reconocer el estudiante
+
+- aportes;\n- volumen inicial;\n- límites de volumen;\n- turbinamiento;\n- vertimiento.
+
+## 4. Intuición del modelo
 
 Representa embalses conectados. El agua turbinada o vertida en una central puede influir en centrales aguas abajo.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ Representa embalses conectados. El agua turbinada o vertida en una central puede
 | Parámetros | $A_{r,t}$: aportes; $\underline{V}_r$, $\overline{V}_r$; $\rho_r$. |
 | Variables | $V_{r,t}$, $Q_{r,t}$, $S_{r,t}$, $H_{r,t}$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Balance hídrico
 
@@ -48,11 +56,11 @@ $$
 \underline{V}_r\leq V_{r,t}\leq \overline{V}_r
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 El análisis debe interpretar el valor temporal del agua y el efecto de restricciones de volumen.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---

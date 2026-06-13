@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-Todo programa lineal puede representarse mediante matrices y vectores. Esta lectura permite comprender cómo un solver organiza un modelo y por qué es necesario mantener consistencia entre dimensiones, índices y unidades.
+Los solvers no interpretan el problema como una historia, sino como matrices, vectores y dominios. La forma matricial permite entender la estructura computacional detrás de modelos grandes.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Exprese un problema lineal en forma compacta usando vector de costos, matriz de restricciones y vector del lado derecho.
+
+## 3. Datos que debe reconocer el estudiante
+
+- vector de variables;\n- matriz de coeficientes;\n- vector de costos;\n- vector de requerimientos;\n- sentido de cada restricción.
+
+## 4. Intuición del modelo
 
 La forma matricial resume un problema lineal usando vectores y matrices. Es útil para entender cómo los solvers organizan la información y por qué es importante mantener consistencia dimensional.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -23,7 +31,7 @@ La forma matricial resume un problema lineal usando vectores y matrices. Es úti
 | Parámetros | $c_j$: costo; $A_{i,j}$: coeficiente; $b_i$: lado derecho. |
 | Variable | $x_j$: decisión. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -49,13 +57,13 @@ $$
 x_j \geq 0 \quad \forall j \in J
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 Esta formulación permite reconocer que modelos eléctricos grandes son extensiones estructuradas de matrices de balance, límites y costos.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
-- [Ir a la actividad](../actividades/README.md)
+- [Ir a la actividad](../actividades/actividad_01_fundamentos_optimizacion.md)
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

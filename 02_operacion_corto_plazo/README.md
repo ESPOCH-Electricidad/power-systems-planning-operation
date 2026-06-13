@@ -2,37 +2,36 @@
 
 > [Menú principal](../README.md) · [Índice del sitio](../docs/index.md) · [Ruta de aprendizaje](../docs/learning_path.md) · [Modelos](../docs/modelos.md) · [Casos](../docs/casos_de_estudio.md) · [Evaluación](../docs/evaluacion.md)
 
-
-
 ![Mapa visual del bloque](../docs/assets/img/bloques/02_operacion.svg)
 
-## 1. Propósito del bloque
+## 1. Contexto y propósito
 
-La operación de corto plazo estudia cómo abastecer la demanda en horizontes de horas o días. Las decisiones son principalmente operativas: cuánto genera cada unidad, qué unidades se encienden, cómo se cumple la reserva y cómo se utiliza la energía hidroeléctrica disponible.
+La operación de corto plazo estudia decisiones horarias o diarias para abastecer demanda eléctrica. Este bloque conecta la teoría de optimización con decisiones operativas reales: generación por unidad, encendido y apagado, rampas, reserva y uso de agua en sistemas hidrotermales.
 
-![Operación de corto plazo](assets/figuras/teoria/operacion_corto_plazo.svg)
+La pregunta central del bloque es: **¿cómo se opera el sistema al menor costo sin violar límites técnicos?**
 
-## 2. Problemas típicos
+![Figura conceptual](assets/figuras/conceptos/operacion_corto_plazo.svg)
 
-| Problema | Decisión principal | Tipo de modelo |
-|---|---|---|
-| Despacho económico | generación por unidad | LP o QP |
-| Despacho por tramos | generación por segmento | LP |
-| Compromiso de unidades | encendido, arranque y generación | MILP |
-| Despacho hidrotérmico | uso de agua y generación térmica | LP/MILP |
-| Cascadas hidroeléctricas | volumen, turbinamiento y vertimiento | LP/NLP según detalle |
+## 2. Conceptos que se desarrollan
 
-## 3. Ecuación base de balance
+| Concepto | Uso didáctico |
+|---|---|
+| Despacho económico | Asignar generación al menor costo en un horizonte corto. |
+| Costos por tramos | Aproximar curvas de costo mediante segmentos lineales. |
+| Unit Commitment | Decidir qué unidades están encendidas y cuándo arrancan. |
+| Hidrotérmico | Coordinar energía hidroeléctrica limitada y generación térmica. |
 
-Para cada periodo $t$, la generación total debe cubrir la demanda y la energía no servida:
+## 3. Ecuación base del bloque
+
+La estructura común de los modelos puede leerse como una optimización de costo o inversión sujeta a balance, límites y reglas operativas:
 
 $$
-\sum_{g \in G} P_{g,t} + ENS_t = D_t
+\min \; C^{op} + C^{inv} + C^{ENS}
 $$
 
-La diferencia entre modelos está en las restricciones adicionales: límites de generación, rampas, mínimos técnicos, estados binarios, reserva y balance hídrico.
+sujeto a restricciones de balance, capacidad, disponibilidad, reserva y factibilidad técnica. Cada modelo del bloque especializa esta estructura general.
 
-## 4. Ruta de aprendizaje
+## 4. Modelos del bloque
 
 | Modelo | Acceso |
 |---|---|
@@ -41,18 +40,20 @@ La diferencia entre modelos está en las restricciones adicionales: límites de 
 | Despacho hidrotérmico simple | [Abrir](modelos/03_despacho_hidrotermico_simple.md) |
 | Cascada hidroeléctrica | [Abrir](modelos/04_operacion_cascada_hidroelectrica.md) |
 | Cascada con rampas | [Abrir](modelos/05_cascada_hidroelectrica_con_rampas.md) |
-| Compromiso de unidades | [Abrir](modelos/06_compromiso_unidades_termicas.md) |
+| Compromiso de unidades térmicas | [Abrir](modelos/06_compromiso_unidades_termicas.md) |
 
-## 5. Carpetas del bloque
+## 5. Actividad principal
 
-| Carpeta | Uso |
-|---|---|
-| [modelos](modelos/README.md) | Formulaciones matemáticas |
-| [notebooks](notebooks/) | Exploración de datos y gráficos |
-| [actividades](actividades/README.md) | Evaluación aplicada |
-| [ED_despacho_economico](ED_despacho_economico/README.md) | Material de ED |
-| [UC_unit_commitment](UC_unit_commitment/README.md) | Material de UC |
-| [despacho_hidrotermico](despacho_hidrotermico/README.md) | Material hidrotermico |
+- [Abrir actividad del bloque](actividades/actividad_02_operacion_corto_plazo.md)
+
+## 6. Preguntas de control
+
+1. ¿Cuál es la decisión principal del modelo?
+2. ¿Qué parámetros condicionan más la solución?
+3. ¿Qué restricciones podrían volverse activas?
+4. ¿Qué resultado debe graficarse para interpretar la solución?
+5. ¿Qué limitaciones tiene la formulación?
+
 ---
 
 > [Menú principal](../README.md) · [Índice del sitio](../docs/index.md) · [Ruta de aprendizaje](../docs/learning_path.md) · [Modelos](../docs/modelos.md) · [Casos](../docs/casos_de_estudio.md) · [Evaluación](../docs/evaluacion.md)

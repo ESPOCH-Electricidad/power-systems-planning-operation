@@ -2,36 +2,46 @@
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)
 
+## 1. Tema asociado
 
+**Tema principal:** Despacho económico
 
-## Estado
+## 2. Contexto del caso
 
-**Completo.**
+Caso mínimo para estudiar despacho económico, costos por tramos y sensibilidad de demanda o costos.
 
-## Propósito
+## 3. ¿Cuándo usar este caso?
 
-Caso didáctico para despacho económico y costos por tramos.
+| Bloque | Uso recomendado |
+|---|---|
+| 02 Operación | ED y ED por tramos |
+| 01 Fundamentos | PL aplicada a generación |
 
-## Datos disponibles
+## 4. Datos disponibles
 
 | Archivo | Descripción |
 |---|---|
-| `datos/ed_uninodal.dat` | Datos para ED uninodal. |
-| `datos/ed_piecewise_3ugt.dat` | Datos para ED por tramos con tres unidades. |
+| `ed_piecewise_3ugt.dat` | Datos disponibles para el caso |
+| `ed_uninodal.dat` | Datos disponibles para el caso |
 
-## Usos recomendados
+## 5. Flujo de trabajo sugerido
 
-| Modelo | Uso |
+1. Revisar qué modelo se desea aplicar.
+2. Identificar datos disponibles y unidades.
+3. Adaptar los datos al `.dat` del modelo correspondiente.
+4. Ejecutar el modelo y verificar factibilidad.
+5. Graficar resultados: generación, flujos, inversión, ENS o tensiones según corresponda.
+6. Comparar el caso base con al menos un escenario de sensibilidad.
+
+## 6. Resultados que debe producir el estudiante
+
+| Tipo de análisis | Resultado mínimo |
 |---|---|
-| ED | Despacho económico básico. |
-| ED por tramos | Costos piecewise linear. |
+| Operación | generación, costo, ENS, unidad marginal |
+| OPF | flujos, límites activos, tensiones o ángulos |
+| TNEP | corredores construidos, costo de inversión, ENS |
+| GEP | capacidad nueva, capacidad acumulada, generación por bloque |
 
-## Recomendaciones de uso
-
-1. Revisar el archivo de datos antes de construir el `.dat` propio.
-2. Verificar unidades y escalas económicas.
-3. Documentar toda adaptación realizada.
-4. Comparar los resultados con el comportamiento esperado del sistema.
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

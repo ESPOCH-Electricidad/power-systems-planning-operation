@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-La demanda varía durante el año. Los bloques de carga permiten aproximar operación anual sin modelar todas las horas.
+Los bloques de carga permiten aproximar operación anual sin modelar las 8760 horas.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Vincule inversión con despacho por bloques de duración.
+
+## 3. Datos que debe reconocer el estudiante
+
+- bloques;\n- duración;\n- demanda;\n- tecnologías;\n- costos variables.
+
+## 4. Intuición del modelo
 
 Relaciona inversión con operación anual aproximada mediante bloques de carga y duración.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ Relaciona inversión con operación anual aproximada mediante bloques de carga y
 | Parámetros | $D_{y,b}$, $h_b$, $CAPEX_k$, $FOM_k$, $c_k$, $AF_k$, $FC_k$, $VOLL$, $RM$. |
 | Variables | $Build_{k,y}$, $Cap_{k,y}$, $Gen_{k,y,b}$, $ENS_{y,b}$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -64,11 +72,11 @@ $$
 \sum_k FC_k Cap_{k,y}+\sum_e FC_e Cap^0_e\geq(1+RM)D^{peak}_y
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 El análisis debe diferenciar capacidad nueva, capacidad acumulada, energía generada, reserva, ENS y costo total.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_05_gep_multianual.md)
 ---

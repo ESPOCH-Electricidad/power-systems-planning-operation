@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-La generación hidroeléctrica tiene bajo costo variable, pero está limitada por disponibilidad de agua. El problema consiste en decidir cuándo usar el recurso hídrico y cuándo complementarlo con generación térmica.
+En sistemas con generación hidroeléctrica, el agua es un recurso limitado. Usarla en una hora reduce su disponibilidad futura.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Coordine generación térmica e hidroeléctrica para minimizar costo en un horizonte temporal.
+
+## 3. Datos que debe reconocer el estudiante
+
+- demanda horaria;\n- energía hidro disponible;\n- límites de potencia;\n- costos térmicos.
+
+## 4. Intuición del modelo
 
 Coordina generación hidroeléctrica limitada por energía disponible y generación térmica con costo variable.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ Coordina generación hidroeléctrica limitada por energía disponible y generaci
 | Parámetros | $c_g$, $D_t$, $\overline{P}_h$, $E_h$. |
 | Variables | $P_{g,t}$, $H_{h,t}$, $ENS_t$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -48,11 +56,11 @@ $$
 \sum_t H_{h,t}\leq E_h \quad \forall h
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 La solución muestra en qué horas conviene usar agua y en qué horas opera generación térmica.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---

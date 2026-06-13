@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-La expansión de transmisión debe respetar la física aproximada de la red. El modelo DC incorpora ángulos y reactancias para que la inversión resulte eléctricamente más coherente.
+El TNEP-DC incluye una representación física lineal mediante ángulos y reactancias.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Decida inversiones respetando flujo DC y límites de transmisión.
+
+## 3. Datos que debe reconocer el estudiante
+
+- corredores;\n- reactancias;\n- circuitos existentes;\n- candidatos;\n- demanda;\n- generación.
+
+## 4. Intuición del modelo
 
 El modelo DC incorpora ángulos de barra y reactancias, por lo que es físicamente más restrictivo que el transporte.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ El modelo DC incorpora ángulos de barra y reactancias, por lo que es físicamen
 | Parámetros | $D_n$, $G^{max}_n$, $c_\ell$, $\overline{F}_\ell$, $x_\ell$, $n^0_\ell$, $\overline{n}_\ell$. |
 | Variables | $n_\ell$, $F_\ell$, $\theta_n$, $P_n$, $ENS_n$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -64,11 +72,11 @@ $$
 F_\ell=\frac{(n^0_\ell+n_\ell)(\theta_i-\theta_j)}{x_\ell}
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 La solución debe analizar corredores seleccionados, costo de inversión, ENS, congestión y diferencias entre formulaciones.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_04_tnep_garver.md)
 ---

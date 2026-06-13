@@ -2,35 +2,45 @@
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)
 
+## 1. Tema asociado
 
+**Tema principal:** OPF-AC
 
-## Estado
+## 2. Contexto del caso
 
-**Parcial; datos AC disponibles.**
+Caso de red de mayor tamaño que IEEE 14 para estudiar OPF-AC y sensibilidad en sistemas con más barras y ramas.
 
-## Propósito
+## 3. ¿Cuándo usar este caso?
 
-Sistema de prueba para OPF-AC con mayor dimensión que IEEE 14.
+| Bloque | Uso recomendado |
+|---|---|
+| 03 OPF | OPF-AC |
+| 06 Integrador | comparación de resultados con IEEE 14 |
 
-## Datos disponibles
+## 4. Datos disponibles
 
 | Archivo | Descripción |
 |---|---|
-| `datos/ieee30_opf_ac.dat` | Datos adaptados para OPF-AC. |
+| `ieee30_opf_ac.dat` | Datos disponibles para el caso |
 
-## Usos recomendados
+## 5. Flujo de trabajo sugerido
 
-| Modelo | Uso |
+1. Revisar qué modelo se desea aplicar.
+2. Identificar datos disponibles y unidades.
+3. Adaptar los datos al `.dat` del modelo correspondiente.
+4. Ejecutar el modelo y verificar factibilidad.
+5. Graficar resultados: generación, flujos, inversión, ENS o tensiones según corresponda.
+6. Comparar el caso base con al menos un escenario de sensibilidad.
+
+## 6. Resultados que debe producir el estudiante
+
+| Tipo de análisis | Resultado mínimo |
 |---|---|
-| OPF-AC | Evaluación de solución no lineal. |
-| OPF-DC | Comparación con aproximación lineal. |
+| Operación | generación, costo, ENS, unidad marginal |
+| OPF | flujos, límites activos, tensiones o ángulos |
+| TNEP | corredores construidos, costo de inversión, ENS |
+| GEP | capacidad nueva, capacidad acumulada, generación por bloque |
 
-## Recomendaciones de uso
-
-1. Revisar el archivo de datos antes de construir el `.dat` propio.
-2. Verificar unidades y escalas económicas.
-3. Documentar toda adaptación realizada.
-4. Comparar los resultados con el comportamiento esperado del sistema.
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

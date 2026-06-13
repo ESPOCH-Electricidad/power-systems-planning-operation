@@ -2,49 +2,54 @@
 
 > [Menú principal](../README.md) · [Índice del sitio](../docs/index.md) · [Ruta de aprendizaje](../docs/learning_path.md) · [Modelos](../docs/modelos.md) · [Casos](../docs/casos_de_estudio.md) · [Evaluación](../docs/evaluacion.md)
 
-
-
 ![Mapa visual del bloque](../docs/assets/img/bloques/03_opf.svg)
 
-## 1. Propósito del bloque
+## 1. Contexto y propósito
 
-El OPF conecta el despacho económico con la física de la red. A diferencia del despacho uninodal, aquí la ubicación de la generación y la demanda importa. Una solución barata puede no ser factible si las líneas se congestionan o si las tensiones salen de rango.
+El OPF extiende el despacho económico incorporando la red eléctrica. Aquí la ubicación de la generación y la demanda importa: una unidad barata puede no abastecer una carga si las líneas se congestionan o si las tensiones violan límites.
 
-![Del ED al OPF](assets/figuras/teoria/opf_de_ed_a_red.svg)
+La pregunta central es: **¿cuál es el despacho óptimo cuando la red impone restricciones físicas?**
 
-## 2. Idea central
+![Figura conceptual](assets/figuras/conceptos/opf_de_ed_a_red.svg)
 
-En OPF-DC, cada barra cumple un balance nodal:
+## 2. Conceptos que se desarrollan
 
-$$
-\sum_{g \in G_n} P_g - P^D_n + ENS_n =
-\sum_{\ell \in \delta(n)} A_{n,\ell} F_\ell
-$$
-
-y cada flujo se aproxima como:
-
-$$
-F_\ell = \frac{\theta_i - \theta_j}{x_\ell}
-$$
-
-En OPF-AC, el modelo incorpora tensiones, ángulos, potencia reactiva y pérdidas mediante ecuaciones no lineales.
-
-## 3. Modelos del bloque
-
-| Modelo | Uso |
+| Concepto | Uso didáctico |
 |---|---|
-| [Flujo óptimo de potencia DC](modelos/01_flujo_optimo_potencia_dc.md) | análisis lineal de congestión |
-| [Flujo óptimo de potencia AC](modelos/02_flujo_optimo_potencia_ac.md) | análisis con tensión, reactivos y pérdidas |
+| OPF-DC | Modelo lineal de potencia activa, ángulos y congestión. |
+| OPF-AC | Modelo no lineal con tensiones, reactivos y pérdidas. |
+| Congestión | Límites de líneas que cambian el despacho. |
+| Interpretación nodal | Balance por barra y efecto de ubicación. |
 
-## 4. Carpetas del bloque
+## 3. Ecuación base del bloque
 
-| Carpeta | Uso |
+La estructura común de los modelos puede leerse como una optimización de costo o inversión sujeta a balance, límites y reglas operativas:
+
+$$
+\min \; C^{op} + C^{inv} + C^{ENS}
+$$
+
+sujeto a restricciones de balance, capacidad, disponibilidad, reserva y factibilidad técnica. Cada modelo del bloque especializa esta estructura general.
+
+## 4. Modelos del bloque
+
+| Modelo | Acceso |
 |---|---|
-| [modelos](modelos/README.md) | Formulaciones OPF |
-| [OPF_DC](OPF_DC/README.md) | Material específico OPF-DC |
-| [OPF_AC](OPF_AC/README.md) | Material específico OPF-AC |
-| [notebooks](notebooks/) | Visualización de datos de red |
-| [actividades](actividades/README.md) | Evaluación aplicada |
+| Flujo óptimo de potencia DC | [Abrir](modelos/01_flujo_optimo_potencia_dc.md) |
+| Flujo óptimo de potencia AC | [Abrir](modelos/02_flujo_optimo_potencia_ac.md) |
+
+## 5. Actividad principal
+
+- [Abrir actividad del bloque](actividades/actividad_03_opf_dc_ac.md)
+
+## 6. Preguntas de control
+
+1. ¿Cuál es la decisión principal del modelo?
+2. ¿Qué parámetros condicionan más la solución?
+3. ¿Qué restricciones podrían volverse activas?
+4. ¿Qué resultado debe graficarse para interpretar la solución?
+5. ¿Qué limitaciones tiene la formulación?
+
 ---
 
 > [Menú principal](../README.md) · [Índice del sitio](../docs/index.md) · [Ruta de aprendizaje](../docs/learning_path.md) · [Modelos](../docs/modelos.md) · [Casos](../docs/casos_de_estudio.md) · [Evaluación](../docs/evaluacion.md)

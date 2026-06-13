@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-Las unidades térmicas no siempre tienen costo marginal constante. Una forma práctica de aproximar curvas de costo crecientes es dividir la producción en tramos con costos lineales.
+Las curvas de costo de generación pueden aproximarse mediante tramos. Esto permite representar costos crecientes sin usar una función no lineal.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Asigne generación por tramos para cubrir demanda minimizando costo.
+
+## 3. Datos que debe reconocer el estudiante
+
+- generadores;\n- tramos;\n- costo por tramo;\n- capacidad por tramo;\n- demanda.
+
+## 4. Intuición del modelo
 
 Representa costos crecientes mediante segmentos lineales. Es útil cuando la curva real de costo no es estrictamente lineal.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ Representa costos crecientes mediante segmentos lineales. Es útil cuando la cur
 | Parámetros | $c_{g,k}$, $\overline{P}_{g,k}$, $D_t$. |
 | Variables | $P_{g,k,t}$: generación del tramo. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -48,11 +56,11 @@ $$
 0\leq P_{g,k,t}\leq \overline{P}_{g,k}
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 El orden de uso de tramos revela cómo el sistema utiliza primero segmentos de menor costo.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_02_operacion_corto_plazo.md)
 ---

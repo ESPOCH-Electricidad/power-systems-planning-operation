@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-El despacho económico puede producir una solución barata pero físicamente inviable si la red se congestiona. El OPF-DC introduce barras, líneas, ángulos y límites de transmisión.
+El despacho económico puede proponer una solución barata que no es transportable por la red. El OPF-DC incorpora barras, líneas, ángulos y límites de transmisión.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Determine el despacho óptimo respetando balance nodal y límites de líneas.
+
+## 3. Datos que debe reconocer el estudiante
+
+- barras;\n- líneas;\n- reactancias;\n- límites térmicos;\n- generadores;\n- demanda por barra.
+
+## 4. Intuición del modelo
 
 El OPF-DC optimiza el despacho considerando red de transmisión bajo una aproximación lineal. Permite analizar congestión y redispatch sin modelar potencia reactiva ni pérdidas.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -22,7 +30,7 @@ El OPF-DC optimiza el despacho considerando red de transmisión bajo una aproxim
 | Parámetros | $P^D_n$, $c_g$, $x_\ell$, $\overline{F}_\ell$, $\underline{P}_g$, $\overline{P}_g$. |
 | Variables | $P_g$, $\theta_n$, $F_\ell$, $ENS_n$. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -64,11 +72,11 @@ $$
 \theta_{ref}=0
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 Debe revisarse qué líneas se saturan, cómo cambia el despacho y si aparece ENS en barras específicas.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
 - [Ir a la actividad](../actividades/actividad_03_opf_dc_ac.md)
 ---

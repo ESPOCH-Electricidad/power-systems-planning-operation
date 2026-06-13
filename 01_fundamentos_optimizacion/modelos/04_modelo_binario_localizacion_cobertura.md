@@ -8,13 +8,21 @@
 
 ## 1. Contexto del problema
 
-Algunas decisiones de ingeniería no son continuas sino discretas: instalar o no instalar, construir o no construir, encender o apagar. Este modelo introduce esa lógica mediante variables binarias.
+Algunas decisiones no son continuas. En planificación eléctrica es común decidir si se construye una línea, si se instala una central o si se ubica un equipo de medición. Este modelo introduce la lógica binaria.
 
-## 2. Intuición del modelo
+## 2. Enunciado guía
+
+Seleccione los sitios de instalación que permiten cubrir todos los elementos requeridos al menor costo.
+
+## 3. Datos que debe reconocer el estudiante
+
+- sitios candidatos;\n- elementos a cubrir;\n- matriz de cobertura;\n- costos fijos de instalación;\n- restricciones de cobertura mínima.
+
+## 4. Intuición del modelo
 
 Este modelo introduce variables binarias. La decisión ya no es solo cuánto producir, sino si instalar o no un activo. Esta lógica aparece luego en unit commitment, expansión de transmisión y expansión de generación.
 
-## 3. Elementos de la formulación
+## 5. Elementos de la formulación
 
 | Elemento | Descripción |
 |---|---|
@@ -23,7 +31,7 @@ Este modelo introduce variables binarias. La decisión ya no es solo cuánto pro
 | Parámetros | $C_a$: costo de instalación; $q_{m,a}$: cobertura posible. |
 | Variables | $y_a$: instalación; $z_{m,a}$: asignación de cobertura. |
 
-## 4. Formulación matemática
+## 6. Formulación matemática
 
 ### Objetivo
 
@@ -65,13 +73,13 @@ $$
 y_a,z_{m,a} \in \{0,1\}
 $$
 
-## 5. Interpretación técnica
+## 7. Interpretación técnica
 
 El resultado debe interpretarse como una decisión de inversión. En sistemas eléctricos, esta estructura es análoga a construir líneas o instalar nueva capacidad.
 
-## 6. Actividad relacionada
+## 8. Actividad relacionada
 
-- [Ir a la actividad](../actividades/actividad_01C_localizacion_binaria.md)
+- [Ir a la actividad](../actividades/actividad_01_fundamentos_optimizacion.md)
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)

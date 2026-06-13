@@ -1,9 +1,0 @@
-producto,utilidad_usd_unid,tiempo_h_unid,material_kg_unid,inspeccion_h_unid,demanda_max_unid
-Aislador_A,9,0.4,1.2,0.1,80
-Aislador_B,13,0.65,1.8,0.12,60
-Aislador_C,16,0.9,2.4,0.18,45
-
-recurso,disponibilidad
-tiempo_maquina_h,70
-material_kg,180
-inspeccion_h,16

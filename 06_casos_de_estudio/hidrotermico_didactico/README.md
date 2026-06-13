@@ -2,37 +2,47 @@
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)
 
+## 1. Tema asociado
 
+**Tema principal:** Despacho hidrotérmico
 
-## Estado
+## 2. Contexto del caso
 
-**Completo.**
+Conjunto de casos progresivos para estudiar coordinación hidrotermal, cascadas y rampas.
 
-## Propósito
+## 3. ¿Cuándo usar este caso?
 
-Casos progresivos para despacho hidrotérmico, cascadas y rampas.
+| Bloque | Uso recomendado |
+|---|---|
+| 02 Operación | hidrotérmico simple, cascadas y rampas |
+| 06 Integrador | comparación de operación térmica e hidro |
 
-## Datos disponibles
+## 4. Datos disponibles
 
 | Archivo | Descripción |
 |---|---|
-| `datos/hidrotermico_simple.dat` | Caso hidrotérmico básico. |
-| `datos/cascada_base.dat` | Cascada hidroeléctrica base. |
-| `datos/cascada_rampas.dat` | Cascada con restricciones de rampa. |
+| `cascada_base.dat` | Datos disponibles para el caso |
+| `cascada_rampas.dat` | Datos disponibles para el caso |
+| `hidrotermico_simple.dat` | Datos disponibles para el caso |
 
-## Usos recomendados
+## 5. Flujo de trabajo sugerido
 
-| Modelo | Uso |
+1. Revisar qué modelo se desea aplicar.
+2. Identificar datos disponibles y unidades.
+3. Adaptar los datos al `.dat` del modelo correspondiente.
+4. Ejecutar el modelo y verificar factibilidad.
+5. Graficar resultados: generación, flujos, inversión, ENS o tensiones según corresponda.
+6. Comparar el caso base con al menos un escenario de sensibilidad.
+
+## 6. Resultados que debe producir el estudiante
+
+| Tipo de análisis | Resultado mínimo |
 |---|---|
-| Despacho hidrotérmico | Gestión de agua y generación térmica. |
-| Cascadas | Dinámica de embalses y operación temporal. |
+| Operación | generación, costo, ENS, unidad marginal |
+| OPF | flujos, límites activos, tensiones o ángulos |
+| TNEP | corredores construidos, costo de inversión, ENS |
+| GEP | capacidad nueva, capacidad acumulada, generación por bloque |
 
-## Recomendaciones de uso
-
-1. Revisar el archivo de datos antes de construir el `.dat` propio.
-2. Verificar unidades y escalas económicas.
-3. Documentar toda adaptación realizada.
-4. Comparar los resultados con el comportamiento esperado del sistema.
 ---
 
 > [Menú principal](../../README.md) · [Índice del sitio](../../docs/index.md) · [Ruta de aprendizaje](../../docs/learning_path.md) · [Modelos](../../docs/modelos.md) · [Casos](../../docs/casos_de_estudio.md) · [Evaluación](../../docs/evaluacion.md)
