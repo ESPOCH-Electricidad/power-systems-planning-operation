@@ -26,8 +26,7 @@ El material está estructurado para que el estudiante pueda transitar desde la f
 | 4 | [`04_tnep_expansion_transmision`](04_tnep_expansion_transmision/) | Transporte, DC, híbrido, lineal disyuntivo | Decidir expansión de red y comparar formulaciones |
 | 5 | [`05_gep_expansion_generacion`](05_gep_expansion_generacion/) | Base, estático con bloques, multianual | Decidir expansión de generación por tecnología y periodo |
 | 6 | [`06_casos_de_estudio`](06_casos_de_estudio/) | Garver, IEEE 14, IEEE 24 RTS, sistemas didácticos | Reutilizar datos comunes en distintos modelos |
-| 7 | [`07_presentaciones`](07_presentaciones/) | Presentaciones, esquemas y recursos gráficos | Apoyar sesiones presenciales, virtuales y autoestudio |
-| 8 | [`08_actividades_y_evaluacion`](08_actividades_y_evaluacion/) | Actividades, cuestionarios y rúbricas | Evaluar formulación, ejecución, interpretación y análisis crítico |
+
 
 ## Horizontes temporales
 
